@@ -5,3 +5,9 @@ body{
 h1{
     border: 2px solid tomato;
 }
+ul{
+    font-size: 30px
+}
+.first{
+    color: brown;
+}
