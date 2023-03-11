@@ -1,0 +1,13 @@
+body{
+    background-image: -moz-linear-gradient();
+  }
+h1{
+    color:rgb(151, 8, 8);
+    text-align: center;
+    font-size:40px;
+  }
+  
+  h3{ 
+    padding: 12px;
+    color:black;
+  }
