@@ -1,6 +1,13 @@
+body {
+    font-family: 'Golos Text', sans-serif;
+}
+
 h1 {
     color: rgb(255, 165, 55);
     font-size: 50px;
+    
+    
+    
     
 }
 h2 {
