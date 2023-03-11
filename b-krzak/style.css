@@ -1,0 +1,14 @@
+body{
+    margin-left: 25px;
+
+    --background-color:#df99c1;
+    --foreground-color:#fff;
+}
+
+h1 {
+    border: 5px solid  pink 
+ 
+}
+ol {
+    border: 5px  solid rgb(128, 11, 50);
+}
