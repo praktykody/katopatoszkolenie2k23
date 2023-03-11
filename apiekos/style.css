@@ -1,0 +1,21 @@
+body {
+    font-family: 'Golos Text', sans-serif;
+}
+
+h1 {
+    color: rgb(255, 165, 55);
+    font-size: 50px;
+    
+    
+    
+    
+}
+h2 {
+    color: rgb(42, 151, 25);
+    
+}
+/* CSS dla pierwszej tabeli */
+.emotki {  
+    border: 2px dashed  aqua;
+
+}

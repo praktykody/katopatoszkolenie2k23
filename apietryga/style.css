@@ -1,0 +1,19 @@
+
+body{
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	border: 2px solid tomato;
+
+}
+
+ul {
+	font-size:30px;
+	border: 2px solid tomato;
+}
+
+.first{
+	color:red;
+} 
