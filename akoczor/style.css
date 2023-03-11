@@ -1,0 +1,11 @@
+body{
+    background: lightcyan;
+    font-family: Rubik Iso;
+}
+
+
+h1{
+    color: cornflowerblue;
+    font-size: 30px;
+    border: 4px dashed red;
+}
