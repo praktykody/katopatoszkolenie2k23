@@ -1,0 +1,35 @@
+body{
+    margin-left: 25px;
+
+    --background-color:#df99c1;
+    --foreground-color:#fff;
+}
+
+h1 {
+ 
+     padding:0px; 
+    margin: .5rem;
+ 
+
+   
+}
+
+ body > header{
+    border: 5px dashed pink;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ body > header ul {
+ 
+   display:flex; 
+   padding:0;
+ }
+
+ body > header ul li {
+    border:5px dashed blue;
+    list-style-type:  none;
+    margin: 0 .5rem;
+    padding:0 .5rem;
+
+ }

@@ -1,0 +1,52 @@
+body{
+    background: linear-gradient(0deg, rgb(237, 247, 192) 0%, rgb(175, 197, 75) 100%);
+    /* background-image: url("https://e7.pngegg.com/pngimages/961/674/png-clipart-footage-leaf-green-video-leaf-white-leaf.png"); */
+  }
+h1{
+    color:rgb(207, 252, 7);
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+h3{ 
+  padding: 12px;
+  color:rgb(255, 0, 0);
+  text-align: center;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhi5yJOLiPy_dZ_eWFVIIC3FYwkOVnEEC6_A&usqp=CAU");
+  align-items: center;
+  padding: 2rem;
+
+}
+nav{
+  display: flex;
+  color:rgb(7, 65, 255);
+  font-weight: bold;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+  
+
+}
+.navi{
+  padding: 0.5rem;
+  background-color: rgb(227, 248, 179);
+  margin: 2.5rem 0rem;
+}
+
+main td {
+  padding: 0.1rem 2rem;
+  text-align: center;
+}
+
+main #tr td{
+  text-decoration: wavy;
+}
+
+nav ul li {
+  display: inline;
+}
+

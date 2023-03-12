@@ -1,0 +1,33 @@
+body{
+    background-color: blanchedalmond;
+    font-family: 'Rubik Iso', cursive;
+}
+.first{
+    color: blue;
+}
+
+h1{
+    color: green;
+    font-size: 30px;
+    margin: .5rem;
+}
+
+h2{
+    padding: 12px;
+    border: 2px dashed red;
+}
+body > header{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+body > header ul {
+    display: flex;
+    padding: 0;
+    align-items: flex-start;
+}
+body > header ul li {
+    list-style:none;
+    margin: 1rem;
+    padding: 1rem;
+}
