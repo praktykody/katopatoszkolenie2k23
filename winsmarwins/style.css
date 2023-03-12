@@ -1,4 +1,9 @@
 
+*{
+    box-sizing: border-box;}
+
+
+
 body{
     margin:0;
     font-family: 'Montserrat', sans-serif;
@@ -75,5 +80,34 @@ main section{
     flex:2;
 
 }
+
+main article table{
+    width: 100;
+   
+}
+
+main article table td:nth-child(2){
+    width: 100%;
+}
+
+.zipParent{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 1rem;
+    position: relative;
+
+}
+
+.zipChild{
+    border-radius: 5px;
+    background: yellow;
+    position:absolute;
+    height: 100%;
+    width: 70%;
+
+}
+
+
+
 
 
