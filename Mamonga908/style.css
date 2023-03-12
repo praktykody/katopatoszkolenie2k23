@@ -51,6 +51,11 @@ main{
     max-width: 1920 px;
 }
 
+main article table{
+
+    
+}
+
 main article{
     border: 15px dashed blue;
     flex: 1;
@@ -62,9 +67,8 @@ main article{
 }
 
 main article img{
-    border: 10px dashed pink;
-    aspect-ratio: 1/1;
-
+    
+  
     border-radius: 30% ;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgb(255, 0, 0) 0px 15px 12px;
     margin-bottom: 1rem ;
@@ -75,3 +79,4 @@ main section{
     border: 15px dashed green;
     flex: 2;
 }
+
