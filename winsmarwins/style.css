@@ -1,0 +1,15 @@
+h1{color:green;
+font: size 50px;
+}
+lu{color:rgb(68, 50, 205);
+font:size 25 px
+}
+body > header{
+    border: 2px dashed coral;
+    display: flex;
+    justify-content: space-between;
+}
+body > header > lu{
+    border: 5px dashed purple;
+    padding: 0
+}
