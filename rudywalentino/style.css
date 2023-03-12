@@ -2,12 +2,30 @@ body{
     margin-left: 25px;
     background-color: aqua;
 }
+
 h1{
-    border: 2px solid tomato;
+    margin: .5rem;
 }
+
 ul{
     font-size: 30px
 }
 .first{
     color: brown;
+}
+body header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body header ul{
+    display: flex;
+    padding: 0;
+    font-size: 40px
+
+}
+body header ul li{
+    list-style: square; 
+    margin: 0 1rem;
+    padding: 0 .5rem;
 }
