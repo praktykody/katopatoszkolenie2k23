@@ -1,18 +1,18 @@
+*{
+    box-sizing: border-box;
+}
 img{
     max-width: 100%
 }
-
 body{
     margin-left: 25px;
     background-color: aqua;
     flex-direction: column;
     align-items: center;
 }
-
 h1{
     margin: .5rem;
 }
-
 ul{
     font-size: 30px
 }
@@ -28,7 +28,6 @@ body header ul{
     display: flex;
     padding: 0;
     font-size: 40px
-
 }
 body header ul li{
     list-style:none;
@@ -43,8 +42,7 @@ body header ul li a{
 }
 main{
     border: 10px dashed red;
-    display: flex;
-    
+    display: flex;    
     max-width: 1920;
     }
 main article{
@@ -54,7 +52,6 @@ main article{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 main article img{
     border: 10px dashed green;
@@ -65,4 +62,24 @@ main article img{
 main section{
     border: 10px dashed green;
     flex: 2
+}
+main article table{
+    width: 100%;    
+}
+main article table td:nth-child(2){
+   border: 2px dashed green;
+   width: 100%
+}
+.zipParent{
+border: 2px solid pink;
+height: 1rem;
+position: relative;
+border: yellowgreen;
+}
+.zipChild{
+    border: 2px dashed purple;
+    position:absolute;
+    height: 100%;
+    width: 50%;
+    background: gray;
 }
