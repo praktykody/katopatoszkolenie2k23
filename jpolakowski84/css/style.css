@@ -1,0 +1,41 @@
+body{
+    font-family: "oswald";
+    background-color: antiquewhite;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+
+
+   }
+
+   body > header{
+    display: flex;
+    justify-content: space-between;
+   }
+
+   body>header ul{
+    display: flex;
+    padding: 0;
+   }
+
+   body > header li{
+    list-style: none;
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+   
+   }
+
+   table{
+    border: 2px solid black;
+   }
+  
+h1{
+    margin: .5rem;
+}
+
+
+h2{
+    padding: 12px;
+    border: 2px dashed rgb(46, 201, 62);
+    border: 2px solid purple;
+    display:inline-flex
+}
