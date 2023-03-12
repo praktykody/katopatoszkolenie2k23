@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: aquamarine;
     font-family: 'Montserrat';
@@ -11,7 +15,7 @@ h1 {
 
 h2 {
     padding: 12px;
-    border: 2px dashed red
+    border: 2px dashed red;
 }
 
 /* odniesienie do bezprosredniego dziecka body */
@@ -71,8 +75,24 @@ main article table {
     width: 100%;
 }
 
-main article table td:nth-child(2) {border:10px dashed red}
-.zipParent {}
+main article table td:nth-child(2) {
+    /* border: 10px dashed red; */
+    width: 100%;
+}
+
+.zipParent {background-color: aliceblue;
+    border: 2px dashed red;
+    height: 1rem;
+    position: relative;
+}
+
+.zipChild { background-color: yellow;
+    border: 2px dashed blue;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
 
 /* <!--element.style {display: flex-start; flex-end, center}-->
 <!--justify-content: space-between; space-evenly; space-around - ustawienie miedzy elementami prawo-lewo-->

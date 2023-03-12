@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 img{
     max-width: 100%;
 }
@@ -51,20 +56,20 @@ body >header ul li a{
 }
 
 main{
-    border: 5px dashed red;
+
     display: flex;
     max-width: 100%;
-    padding: 20px;
+    
     
 }
 
 main article{
-    border: 5px dashed blue;
+
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 1rem;
 }
 
 main article img{
@@ -76,9 +81,9 @@ main article img{
 
 
 main section{
-    border: 5px dashed green;
+
     flex: 2;
-    padding: 20px;
+    padding: 1rem;
 }
 
 
@@ -86,6 +91,28 @@ main article table{
     width: 100%;
 }
 
+main article table td:nth-child(2){
+
+width: 100%;
+}
+
+
+.zipParent{
+    height: 1rem;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+
+.zipChild{
+
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    background: red;
+   
+}
 
 
 
