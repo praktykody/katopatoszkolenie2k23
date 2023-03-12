@@ -1,28 +1,26 @@
 h1{
-    border: 2px solid brown;
+    
+    margin: .5rem;
 }
 
 body > header{
-    border: 2px dashed green;
+   
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 } 
 
 body > header ul{
-    border: 2px dashed rgb(255, 20, 20); 
+   
     display:flex;
     padding: 0;
 }
 
-body > header ul il{
-    border: 5px dashed rgb(51, 255, 0); 
+body > header ul li{
+   
     list-style: nome;
     margin: 0 .5rem;
     padding: 0 .5rem;
 
 }
 
-h1{
-
-}
