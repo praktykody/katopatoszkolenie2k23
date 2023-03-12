@@ -17,6 +17,7 @@ body header{
     border: 5px dashed green;
     display: flex;
     justify-content: space-between;
+    margin: 1rem;
 }
 body header ul{
     display: flex;
