@@ -90,7 +90,14 @@ main section{
     main article table{
 
         width: 100%;
-        
+
+    }
+    main article table td:nth-child(2){
+        border: 2px dashed yellow;
     }
 
+    .zipparent{
+
+        border: 2px dashed yellow;
+    }
     
