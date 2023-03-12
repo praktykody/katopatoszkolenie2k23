@@ -45,3 +45,13 @@ h2{
     border: 2px solid purple;
     display:inline-flex
 }
+
+table td:nth-child(2) { 
+    min-width:200px;
+}
+
+table td:nth-child(2) .scale{ 
+    height:1rem;
+    background: #000;
+    border-radius:15px;
+}

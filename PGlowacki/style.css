@@ -1,7 +1,14 @@
+img{
+    max-width: 100%;
+}
 body{
     background-color: blanchedalmond;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
+    background-image: url("https://c.pxhere.com/images/0e/3b/2f82fcd6dbbdf2f7126a14ed4dad-1672622.jpg!s2");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .first{
     color: blue;
@@ -11,17 +18,17 @@ h1{
     color: green;
     font-size: 30px;
     margin: .5rem;
+    max-width: 1920px;
 }
-
 h2{
     padding: 12px;
     color: black;
-}
-    
+}   
 body > header{
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%
 }
 body > header ul {
     display: flex;
@@ -34,5 +41,35 @@ body > header ul li {
     padding: .5rem;
     text-decoration: none;
     justify-content: flex-end;
+}
+table {
+    background-color: aqua;
+}
+main {
+    border: 2px dashed red;
+    display: flex;
+    max-width: 1920px;
 
+}
+main article{
+    border: 2px dashed blue;
+    flex: 2;
+    padding: 0.2rem;
+}
+main section img {
+    border: 10px dashed rgba(78, 48, 24, 0.923);
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px;
+}
+main section header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section {
+    border: 2px dashed green;
+    flex: 1;
+}
+main section header table {
+    width: 100%;
 }
