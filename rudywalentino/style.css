@@ -35,3 +35,12 @@ body header ul li a{
 	margin:0 .4rem;
 	padding:0 .5rem;
 }
+main{
+    border: 10px dashed red
+    }
+main article{
+    border: 10px dashed blue
+}
+main section{
+    border: 10px dashed green
+}
