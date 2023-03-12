@@ -31,5 +31,8 @@ h1 {
     list-style-type:  none;
     margin: 0 .5rem;
     padding:0 .5rem;
+    align-items: center;
+    text-decoration: none;
+    
 
  }
