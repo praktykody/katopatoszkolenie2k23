@@ -91,7 +91,7 @@ main article table td:nth-child(2){
 }
 
 .zipParent{
-    border: 2px dashed black;
+    border: 2px solid black;
     border-radius: 5px;
     height: 1rem;
     position: relative;
@@ -101,13 +101,13 @@ main article table td:nth-child(2){
 .zipChild{
     border-radius: 5px;
     background: yellow;
-    position:absolut;
+    position:absolute;
     height: 100%;
     width: 70%;
 
 }
 
-/"main artikle"
+
 
 
 
