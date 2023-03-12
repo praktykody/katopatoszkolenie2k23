@@ -1,0 +1,20 @@
+body{
+    background-color: blanchedalmond;
+    font-family: 'Rubik Iso', cursive;
+}
+.first{
+    color: blue;
+}
+
+h1{
+    color: green;
+    font-size: 30px;
+}
+
+h2{
+    padding: 12px;
+    border: 2px dashed red;
+}
+h1{
+    border: 2px solid tomato ;
+}
