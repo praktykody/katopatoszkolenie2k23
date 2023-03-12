@@ -41,7 +41,8 @@ body header ul li a{
 }
 main{
     border: 10px dashed red;
-    display: flex
+    display: flex;
+    padding:0 2rem;
     }
 main article{
     border: 10px dashed blue;
