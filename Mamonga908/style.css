@@ -1,3 +1,12 @@
+*{
+    box-sizing: border-box;
+
+}
+
+
+
+
+
 img{
     max-width: 100%;
 }
@@ -52,8 +61,29 @@ main{
 }
 
 main article table{
+    width: 100%;
 
+}
+
+.zipParent{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 1rem;
+    position: relative;
+
+}
+
+.zipChild{
+    border-radius: 5px;
+    background: yellow;
+    position: absolute;
+    height: 100%;
+    width: 70%;
+}
+
+main article table td:nth-child(2){
     
+    width: 100%;
 }
 
 main article{
@@ -70,13 +100,18 @@ main article img{
     
   
     border-radius: 30% ;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgb(255, 0, 0) 0px 15px 12px;
-    margin-bottom: 1rem ;
-
-}
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;}
 
 main section{
-    border: 15px dashed green;
+    border: 15px dashed rgb(5, 218, 5);
     flex: 2;
 }
+
+
+
+
+
+
+
+
 

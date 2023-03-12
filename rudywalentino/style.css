@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 img{
     max-width: 100%
 }
@@ -61,6 +64,22 @@ main section{
     flex: 2
 }
 main article table{
-    width: 100%;
-    
+    width: 100%;    
+}
+main article table td:nth-child(2){
+   border: 2px dashed green;
+   width: 100%
+}
+.zipParent{
+border: 2px solid pink;
+height: 1rem;
+position: relative;
+border: yellowgreen;
+}
+.zipChild{
+    border: 2px dashed purple;
+    position:absolute;
+    height: 100%;
+    width: 50%;
+    background: gray;
 }
