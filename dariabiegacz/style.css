@@ -36,12 +36,43 @@ body>header ul li {
 }
 
 body>header ul li a {
-    display:flex; 
-    align-items:center;
+    display: flex;
+    align-items: center;
 }
-main {border: 15px;px dashed red}
-main article {border:15px dashed blue}
-main section {border:15px dashed green}
+
+main {
+    border: 2px dashed red;
+    display: flex;
+    padding: .2rem;
+    max-width: 1920px;
+}
+
+main article {
+    border: 2px dashed blue;
+    flex: 1;
+}
+
+main section {
+    border: 2px dashed green;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main article img {
+    border: 10px dashed pink;
+    border-radius: 50%;
+    box-shadow: 0 0 20px black;
+    margin-bottom: 1rem;
+}
+
+main article table {
+    width: 100%;
+}
+
+main article table td:nth-child(2) {border:10px dashed red}
+.zipParent {}
 
 /* <!--element.style {display: flex-start; flex-end, center}-->
 <!--justify-content: space-between; space-evenly; space-around - ustawienie miedzy elementami prawo-lewo-->
