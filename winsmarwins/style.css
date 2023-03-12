@@ -1,6 +1,13 @@
+body{
+ font-family: 'Montserrat', sans-serif;
+ font-family: 'Pacifico', cursive;}
+body
+
 h1{
     
     margin: .5rem;
+    color: blue;
+
 }
 
 body > header{
@@ -18,12 +25,16 @@ body > header ul{
 
 body > header ul li{
    
-    list-style: nome;
+    list-style: none;
     margin: 0 .5rem;
     padding: 0 .5rem;
     
 
 }
-
+body > header ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
 
 
