@@ -1,14 +1,17 @@
 body {
     font-family: 'Golos Text', sans-serif;
+    
+    
+    
 }
 
 h1 {
     color: rgb(255, 165, 55);
-    font-size: 50px;
+    font-size: 2rem;
+    margin:.5rem;
+    /* border: 2px solid green; */
     
-    
-    
-    
+       
 }
 h2 {
     color: rgb(42, 151, 25);
@@ -18,4 +21,27 @@ h2 {
 .emotki {  
     border: 2px dashed  aqua;
 
+}
+/* Odniesienie do bezpośredniego dziecka body */
+body > header { 
+   
+    /* border: 5px dashed green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body > header ul {
+    /* border:5px solid blueviolet; */
+    display: flex;
+    padding: 0;
+}
+
+body > header ul li {
+    /* border: 2px solid blueviolet; */
+    list-style: none;
+    margin:0 .4rem;
+    padding:0 .5rem;
+    font-size: 1rem;
+    
 }
