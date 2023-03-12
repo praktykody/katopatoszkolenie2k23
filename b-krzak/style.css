@@ -27,7 +27,7 @@ h1 {
  }
 
  body > header ul li {
-    border:5px dashed blue;
+    
     list-style-type:  none;
     margin: 0 .5rem;
     padding:0 .5rem;
