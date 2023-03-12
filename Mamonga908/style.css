@@ -16,7 +16,7 @@ body > header ul{
     padding: 0;
 }
 
-body > header ul il{
+body > header ul li{
    
     list-style: nome;
     margin: 0 .5rem;
