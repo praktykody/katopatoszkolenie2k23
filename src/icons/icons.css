@@ -25,7 +25,7 @@
   grid-area:ph;
   background:linear-gradient(#5EF979,#09BB26);
 }
-.phone::after{ background: url("./phone.svg") }
+.phone::after{ background: url("./tel.svg") }
 .mail{
   grid-area:ml;
   background-image:
