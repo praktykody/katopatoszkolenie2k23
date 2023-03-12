@@ -1,6 +1,6 @@
 body{
     font-family: "oswald";
-    background-color: antiquewhite;
+    background-color: rgba(112, 112, 112, 0.525);
     font-size: 1rem;
     font-family: 'Oswald', sans-serif;
 
@@ -10,7 +10,9 @@ body{
    body > header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
    }
+ 
 
    body>header ul{
     display: flex;
@@ -26,6 +28,10 @@ body{
 
    table{
     border: 2px solid black;
+   }
+   
+   tr > img{
+    width: 30px;
    }
   
 h1{
