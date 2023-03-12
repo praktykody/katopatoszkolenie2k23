@@ -61,6 +61,11 @@ main section{
     flex: 2
 }
 main article table{
-    width: 100%;
-    
+    width: 100%;    
+}
+main article table td:nth-child(2){
+   border: 10px dashed green 
+}
+.zipParent{
+
 }
