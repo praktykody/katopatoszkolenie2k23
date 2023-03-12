@@ -27,5 +27,8 @@ body header ul{
 body header ul li{
     list-style: square; 
     margin: 0 1rem;
-    padding: 0 .5rem;
+    padding: 0 .5rem;    
+}
+body header ul li a{
+    align-items: center;
 }
