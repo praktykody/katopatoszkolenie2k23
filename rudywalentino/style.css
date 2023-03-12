@@ -1,12 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%
+}
 body{
     margin-left: 25px;
     background-color: aqua;
+    flex-direction: column;
+    align-items: center;
 }
-
 h1{
     margin: .5rem;
 }
-
 ul{
     font-size: 30px
 }
@@ -22,10 +28,58 @@ body header ul{
     display: flex;
     padding: 0;
     font-size: 40px
-
 }
 body header ul li{
-    list-style: square; 
+    list-style:none;
     margin: 0 1rem;
-    padding: 0 .5rem;
+    padding: 0 .5rem;    
+}
+body header ul li a{
+    align-items: center;    
+	margin:0 .4rem;
+	padding:0 .5rem;
+    text-decoration: none;
+}
+main{
+    border: 10px dashed red;
+    display: flex;    
+    max-width: 1920;
+    }
+main article{
+    border: 10px dashed blue;
+    flex: 1;
+    padding:0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main article img{
+    border: 10px dashed green;
+    border-radius: 50%;    
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    margin-bottom: 1rem;
+}
+main section{
+    border: 10px dashed green;
+    flex: 2
+}
+main article table{
+    width: 100%;    
+}
+main article table td:nth-child(2){
+   border: 2px dashed green;
+   width: 100%
+}
+.zipParent{
+border: 2px solid pink;
+height: 1rem;
+position: relative;
+border: yellowgreen;
+}
+.zipChild{
+    border: 2px dashed purple;
+    position:absolute;
+    height: 100%;
+    width: 50%;
+    background: gray;
 }
