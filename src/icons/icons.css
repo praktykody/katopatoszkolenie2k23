@@ -7,6 +7,7 @@
   background-repeat:no-repeat;
   background-position: center;
   position:relative;
+  margin:0 .3rem;
 }
 .icon::after{
   content:"";
