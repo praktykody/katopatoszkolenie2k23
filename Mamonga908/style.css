@@ -1,3 +1,8 @@
+img{
+    max-width: 100;
+}
+
+
 h1{
     
     margin: .5rem;
@@ -18,9 +23,30 @@ body > header ul{
 
 body > header ul li{
    
-    list-style: nome;
+    list-style: none;
     margin: 0 .5rem;
     padding: 0 .5rem;
 
 }
 
+body > header ul li a{
+	display:flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+main{
+    border: 15px dashed red;
+    display: flex;
+
+}
+
+main article{
+    border: 15px dashed blue;
+
+}
+
+main section{
+    border: 15px dashed green;
+
+}
