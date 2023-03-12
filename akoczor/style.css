@@ -1,19 +1,32 @@
+img{
+    max-width: 100%;
+}
+
 body{
-    background: lightcyan;
-    font-family: Rubik Iso;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Signika Negative';
+    margin: 0;
+    padding: 0;
 }
 
 
 h1{
-    color: cornflowerblue;
+    color: white;
     font-size: 30px;
     margin: .5rem;
+    font-family: 'Henny Penny';
 }
 /* Odniesienie do bezpośredniego dziecka */
 body > header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    width: 100%;
+    position: sticky;
+    top: 0
     
 }
 
@@ -29,6 +42,53 @@ body >header ul li{
     margin: 0 .5rem;
     padding: 0 .5rem;
 }
+
+body >header ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    border: 5px dashed red;
+    display: flex;
+    max-width: 100%;
+    padding: 20px;
+    
+}
+
+main article{
+    border: 5px dashed blue;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+main article img{
+
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgb(18, 54, 18);
+}
+
+
+main section{
+    border: 5px dashed green;
+    flex: 2;
+    padding: 20px;
+}
+
+
+main article table{
+    width: 100%;
+}
+
+
+
+
 
 
 
