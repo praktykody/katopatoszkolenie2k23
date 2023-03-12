@@ -1,16 +1,18 @@
 body{
-    background: linear-gradient(0deg, rgb(237, 247, 192) 0%, rgb(175, 197, 75) 100%);
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(0deg, rgb(175, 197, 75) 0%, rgb(237, 247, 192) 100%);
     /* background-image: url("https://e7.pngegg.com/pngimages/961/674/png-clipart-footage-leaf-green-video-leaf-white-leaf.png"); */
   }
 h1{
-    color:rgb(207, 252, 7);
+    color:rgb(237, 247, 192);
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   
 h3{ 
   padding: 12px;
-  color:rgb(255, 0, 0);
+  color:rgb(0, 0, 0);
   text-align: center;
 }
 header{
@@ -24,7 +26,7 @@ header{
 }
 nav{
   display: flex;
-  color:rgb(7, 65, 255);
+  color:rgb(0, 0, 0);
   font-weight: bold;
   justify-content: space-evenly;
   font-size: 1.2rem;
