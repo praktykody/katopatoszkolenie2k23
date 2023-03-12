@@ -44,3 +44,25 @@ body > header ul li{
     padding:0 .5 rem;
 
 }
+body > header ul li a{
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color:black
+}
+
+
+
+main{
+border:5px dashed red
+
+}
+main article{
+    border:5px dashed yellow
+    
+    }
+
+main selection{
+    border:5px dashed black
+    
+    }
