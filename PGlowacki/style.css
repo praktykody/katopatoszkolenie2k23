@@ -1,3 +1,8 @@
+
+*{
+    box-sizing: border-box;
+}
+
 img{
     max-width: 100%;
 }
@@ -46,13 +51,11 @@ table {
     background-color: aqua;
 }
 main {
-    border: 2px dashed red;
     display: flex;
     max-width: 1920px;
 
 }
 main article{
-    border: 2px dashed blue;
     flex: 2;
     padding: 0.2rem;
 }
@@ -67,9 +70,28 @@ main section header{
     align-items: center;
 }
 main section {
-    border: 2px dashed green;
     flex: 1;
 }
-main section header table {
+main section header table td:nth-child(2){
     width: 100%;
+}
+main section header table{
+    width: 100%;
+}
+
+.zipParent{
+    height: 1rem;
+    position: relative;
+    background-color: white;
+}
+
+.zipChild{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: yellow;
+    
+}
+main section header table tr:nth-child(1) .zipChild{
+    width: 60%;
 }

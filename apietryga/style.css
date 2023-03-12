@@ -1,3 +1,7 @@
+*{
+	box-sizing: border-box;
+}
+
 img{
 	max-width: 100%;
 }
@@ -69,11 +73,38 @@ main article img {
 
 main article table {
 	width:100%;
-
 }
+
+main article table td:nth-child(2){
+	width:100%;
+}
+
+.zipParent{
+	border: 1px solid #000;
+	border-radius: 5px;
+	height:1rem;
+	position: relative;
+}
+
+.zipChild{
+	border-radius: 5px;
+	background: yellow;
+	position:absolute;
+	height:100%;
+	width:70%;
+}
+
+
+/* main article table tr:nth-child(1) .zipChild{
+	border:2px dashed red;
+} */
+
+
+
 
 main section{
 	border:2px dashed green;
 	flex:2;
 }
+
 
