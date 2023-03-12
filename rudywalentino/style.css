@@ -5,6 +5,8 @@ img{
 body{
     margin-left: 25px;
     background-color: aqua;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1{
@@ -43,6 +45,7 @@ main{
     border: 10px dashed red;
     display: flex;
     padding:0 2rem;
+    max-width: 1920;
     }
 main article{
     border: 10px dashed blue;
