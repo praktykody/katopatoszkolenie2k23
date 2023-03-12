@@ -3,7 +3,9 @@ body{
     margin:0;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Pacifico', cursive;
- 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 img{
      max-width:100%; 
