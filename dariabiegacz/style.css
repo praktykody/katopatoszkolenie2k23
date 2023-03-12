@@ -15,21 +15,29 @@ h2 {
 }
 
 /* odniesienie do bezprosredniego dziecka body */
-body > header {
+body>header {
     border: 5px dashed green;
     display: flex;
     justify-content: space-between;
-    padding:0;
+    padding: 0;
 }
 
-body > header ul {display: flex; padding: 0;}
+body>header ul {
+    display: flex;
+    padding: 0;
+}
 
-body > header ul li {
+body>header ul li {
     border: 5px dashed blue;
     list-style: none;
     margin: .5rem;
     display: flex;
     justify-content: space-between;
+}
+
+body>header ul li a {
+    display:flex; 
+    align-items:center;
 }
 
 /* <!--element.style {display: flex-start; flex-end, center}-->
@@ -38,5 +46,5 @@ body > header ul li {
 /* flex-direction: row; column; reverse */
 /* flexbox froggy */
 /* procenty odnosza sie do rodzicow, vw do wielkosci okna */
-/* em zaleza od miejsca w ktorym sie znajduja, remy dotycza stalej jednej wartosci */ 
+/* em zaleza od miejsca w ktorym sie znajduja, remy dotycza stalej jednej wartosci */
 /* 2em, gdy mamy EM1, EM2 i EM3 EM1 15 px, EM2 bedzie 2xdomyslna czcionka 30 px = 60 px, EM3 bedzie 120px */

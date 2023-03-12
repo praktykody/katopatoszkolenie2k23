@@ -1,0 +1,60 @@
+.icon{
+  width:1.5rem;
+  height:1.5rem;
+  display:inline-block;
+  border-radius:5px;
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position: center;
+  position:relative;
+  margin:0 .3rem;
+}
+.icon::after{
+  content:"";
+  z-index:10;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+.github{
+  background:  linear-gradient(#000,rgb(75, 75, 75));
+}
+.github::after{ background: url("./github.svg") }
+.phone{
+  grid-area:ph;
+  background:linear-gradient(#5EF979,#09BB26);
+}
+.phone::after{ background: url("./tel.svg") }
+.mail{
+  grid-area:ml;
+  background-image:
+  linear-gradient(#1E52EE,#19E4FF);
+}
+.mail::after{ background: url("./mail.svg") }
+.messenger{
+  grid-area:mg;
+  background:linear-gradient(#00C6FF,#006EFF);
+}
+.messenger::after{ background: url("./messenger.svg") }
+.insta{
+  grid-area:ig;
+  background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.insta::after{ background: url("./instagram.svg") }
+.fb{
+  grid-area:fb;
+  background:linear-gradient(#18AAFD,#0066E2);
+}
+.fb::after{ background: url("./facebook.svg") }
+.yt{
+  grid-area:yt;
+  background:linear-gradient(#DB2824,#760700);
+}
+.yt::after{ background: url("./youtube.svg") }
+.in{
+  grid-area:in;
+  background:#007FBC;
+}
+.in::after{ background: url("./linkedin.svg") }
