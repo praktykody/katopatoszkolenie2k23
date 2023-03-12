@@ -1,15 +1,17 @@
+*{
+  box-sizing: border-box;
+}
 body{
     margin: 0%;
     padding: 0%;
-    background: linear-gradient(0deg, rgb(237, 247, 192) 0%,rgb(255, 255, 255) 100%);
+    background: linear-gradient(0deg, rgb(209, 224, 142) 0%,rgb(255, 255, 255) 100%);
     /* background-image: url("https://e7.pngegg.com/pngimages/961/674/png-clipart-footage-leaf-green-video-leaf-white-leaf.png"); */
-  }
+}
 h1{
     color:rgb(237, 247, 192);
     text-align: center;
     font-size: 3rem;
-  }
-  
+}
 h3{ 
   padding: 12px;
   color:rgb(0, 0, 0);
@@ -21,8 +23,58 @@ header{
   flex-direction: row;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhi5yJOLiPy_dZ_eWFVIIC3FYwkOVnEEC6_A&usqp=CAU");
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0px;
+  border-bottom: 0.3rem solid beige;
 
+
+}
+img{
+  margin: 3% 3% 0% 3%;
+  border: 0.3rem solid beige;
+}
+main {
+display: flex;
+justify-content: center;
+margin-top: 2em;
+}
+main article{
+  width: 30vw;
+  margin: 5%0%5%5%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhi5yJOLiPy_dZ_eWFVIIC3FYwkOVnEEC6_A&usqp=CAU");
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+  border: 0.3rem solid beige;
+
+}
+main section{
+  width: 70vw;
+  margin: 5%5%5%0%;
+  flex:3;
+  background-color: white;
+  border: 0.3rem solid beige;
+  padding: 2%;
+
+}
+main table{
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0%;
+  background-color: white;
+  border: 0rem solid beige;
+}
+main table tr{
+  width: 100%;
+ 
+}
+main table tr td{
+  padding: 0.7rem;
+}
+main table tr td:nth-child(2){
+  width: 100%;
 }
 nav{
   display: flex;
@@ -30,24 +82,44 @@ nav{
   font-weight: bold;
   justify-content: space-evenly;
   font-size: 1.2rem;
-  
-
 }
 .navi{
   padding: 0.5rem;
   background-color: rgb(227, 248, 179);
+  color:rgb(0, 0, 0);
   margin: 2.5rem 0rem;
+  border: 0.3rem solid rgb(218, 243, 163) ;
 }
-
-main {
-display: flex;
-justify-content: space-around;
-margin-top: 2em;
-
-
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
 }
-
 nav ul li {
-  display: inline;
+list-style: none;
 }
+nav ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.titles{
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0%;
+  text-align: center;
+}
+.zipParent{
+  height: 1rem;
+  position: relative;
+  background-color: beige;
+  border: 2px solid black;
+}
+.zipChild{
+  position: absolute;
+  height: 100%;
+  background-color: rgb(67, 145, 77);
+  
 
+
+}
