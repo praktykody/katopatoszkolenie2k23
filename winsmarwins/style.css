@@ -1,8 +1,13 @@
-body{
- font-family: 'Montserrat', sans-serif;
- font-family: 'Pacifico', cursive;}
-body
 
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+ 
+}
+body
+img:
+    max-width:100%;
 h1{
     
     margin: .5rem;
@@ -35,6 +40,19 @@ body > header ul li a {
     display: flex;
     align-items: center;
     text-decoration: none;
+}
+
+main{
+    border: 2px solid red;
+    display: flex;
+    padding: 2rem;
+}
+main article{
+    border: 2px solid rgb(167, 8, 21);
+    display: flex;  
+}
+main section{
+    border: 2px solid rgb(11, 11, 174);  
 }
 
 
