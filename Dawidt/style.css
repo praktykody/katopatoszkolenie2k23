@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 img{
     max-width: 100%;
 }
@@ -93,11 +95,26 @@ main section{
 
     }
     main article table td:nth-child(2){
-        border: 2px dashed yellow;
+        border: 2px solid black;
+        width:100%;
+        height: 1rem;
     }
 
     .zipparent{
+        
 
-        border: 2px dashed yellow;
+        
+        height: 1rem;
+        position: relative;
+    }
+
+    .zipchild{
+        
+        background:  rgb(0, 238, 255);
+        position:absolute;
+        height: 100%;
+        width: 50%;
+
+
     }
     
