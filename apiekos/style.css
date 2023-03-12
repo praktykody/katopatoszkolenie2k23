@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Golos Text', sans-serif;
      margin: 0;
@@ -113,7 +117,7 @@ main section {
     flex: 2;
     display: flex;
     flex-direction: column;
-    padding: 0 10rem;
+    padding: 0 7rem;
     
     
 }
@@ -146,4 +150,28 @@ sup {
     color: white;
 }
 
+main article table {
+    width: 100%;
+}
 
+main article table td:nth-child(2){
+border: 2px solid red;
+width: 100%;
+}
+
+.zipParent {
+    background: rgb(255, 255, 255);;
+    border: 5px solid black;
+    height: 1rem;
+    position: relative;
+    border-radius: 5px;;
+}
+
+.zipChild {
+    background: rgb(253, 2, 2);;
+    border: 2px solid black;
+    position: absolute;
+    height: 100%;
+    width: 70%;
+
+}
