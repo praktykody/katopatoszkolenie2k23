@@ -26,6 +26,7 @@ body header ul{
 }
 body header ul li{
     border: 5px dashed yellowgreen ;
-    list-style: square;
-    margin: 0,10px;
+    list-style: square; 
+    margin: 0 1rem;
+    padding: 0 .5rem;
 }
