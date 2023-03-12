@@ -83,15 +83,18 @@ main section header table{
 }
 
 .zipParent{
-    border: 2px dashed red;
     height: 1rem;
     position: relative;
+    background-color: white;
 }
 
 .zipChild{
-    border: 2px dashed blue;
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 100%;
+    background-color: yellow;
     
+}
+main section header table tr:nth-child(1) .zipChild{
+    width: 60%;
 }
