@@ -1,8 +1,0 @@
-trends.google.com
-praktykody.github.io
-! - emmet
-ctrl + /  Komentarz 
-
-GIT instalacja
-ctrl +` terminal
-Do identyfikatorów w css możemy się odwoływać po #
