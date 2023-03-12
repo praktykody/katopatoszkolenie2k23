@@ -1,0 +1,34 @@
+body{
+    background: lightcyan;
+    font-family: Rubik Iso;
+}
+
+
+h1{
+    color: cornflowerblue;
+    font-size: 30px;
+    margin: .5rem;
+}
+/* Odniesienie do bezpośredniego dziecka */
+body > header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+body > header ul{
+    display: flex;
+    padding: 0;
+}
+
+body >header ul li{
+
+    list-style: none;
+    font-size: 1.25rem;
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+}
+
+
+

@@ -1,0 +1,25 @@
+display: flex
+--------------
+- justify-content: (oś x)
+    +flex-start
+    +flex-end
+    +center
+    +space-between (brak bocznych przestrzeni)
+    +space-evenly (przestrzenie pomiędzy elementami są równe)
+    +space-around (każdy z elementów bierze taką samą odległość)
+
+
+- align-items: (oś y)
+ + właściwośći takie same jak w justify
+
+
+-flex-direction: (użycie tego zamienia osie x oraz y)
+    + row
+    + column
+    +row-reverse
+    +colun-reverse
+
+______________________________________
+- flex-wrap 
+    +wrap
+    +nowrap
