@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../src/icons/icons.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,14 +21,22 @@
             <ul>
                 <li>
                     <a href="https://github.com/B-Krzak"
-                    target="_blank"
-                    >Github</a>
+                    target="_blank">
+                    <i class="icon github"></i>
+                        Github</a>
                 </li>
-                <li>O mnie</li>
+                <li>
+                    <a href="mailto: xbasiekx@wp.pl">
+                      <i class="icon mail"></i>  
+                         Email</a>
+                               
+                    
+                </li>
                 <li>
                     <a href="tel:539567662">
-                        Kontakt
-                    </a>
+                        <i class="icon phone"></i>
+                        Kontakt</a>
+                   
                      
 
                 </li>
@@ -35,51 +44,72 @@
         </nav>
    
     </header>
- <main>świnka</main>
-    <img src="/b-krzak/świnka-skarbonka.jpg" alt="swinka" width="400">
+ 
+    <main>
+        <article>
+            <img src="/b-krzak/świnka-skarbonka.jpg" alt="swinka" width="400">
+             <!-- komentarz -->
+            <table border="4">
 
-    <article>cos tam cos tam</article>
-    <header>
-        <h2>
-            <section>
-                <p>tematycznie zgrupowany kontent</p>
-            </section>
-        </h2>
-    </header>
+                <tr>
+                    <td>HTML</td>
+               
+                    <td>
+                        <div classic="zipParent">
+                            <div classic="zipChild"></div>
+                            <div classic="zipChild"></div>
+                        </div>
+                    </td>
+                
+                </tr>
+                <tr>
+                    <td>CSS</td>
+               
+                    <td>
+                        <div classic="zipParent">
+                            <div classic="zipChild"></div>
+                            <div classic="zipChild"></div>
+                        </div>
+                    </td>
+                
+                </tr>
+            </table>
+            
+        </article>
+        
+        <section>
+            <header>
+                <h2>
+               tytuł
+                </h2>
+            </header>
+            <ol>
+                    <li>lista 1</li>
+                    <li>lista 2</li>
+            </ol>
+        </section>
+        
+    </main>
+    
 
-    <footer>stopka</footer>
-    <!-- komentarz -->
-    <table border="4">
-        <tr>
-            <td colspan="2">raz❤️</td>
-        </tr>
-        <tr>
-            <td>dwa❤️</td>
-            <td>trzy❤️</td>
-        </tr>
-        <tr>
-            <td colspan="2">cztery❤️</td>
-        </tr>
-    </table>
-    <ol>
-        <ul>
-            <li>lista 1</li>
-            <li>lista 2</li>
-        </ul>
-        </li>
-    </ol>
+<form>
     <div>
-        <form action=”result.html” method=”post|get”>
-            <input type=”text” value=”Imie” />
-            <input type=”submit” value="wyślij" />
-        </form>
-        <textarea name="" id="" cols="25" rows="05"></textarea>
+        <label for="example"> Imię i Nazwisko</label>
+        <input id="example"
+        type="text" name="text" />
     </div>
+    
+    <div>
+        <input type="submit"
+        value="Wyślij" />
+    </div>
+</form>
 
 
 
 
 
+<footer>stopka</footer>
 
 </body>
 
