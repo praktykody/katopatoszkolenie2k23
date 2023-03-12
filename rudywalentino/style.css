@@ -19,4 +19,13 @@ body header{
     justify-content: space-between;
 }
 body header ul{
+    display: flex;
+    padding: 0;
     font-size: 40px
+
+}
+body header ul li{
+    border: 5px dashed yellowgreen ;
+    list-style: square;
+    margin: 0,10px;
+}
