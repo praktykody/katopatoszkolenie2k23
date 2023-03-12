@@ -77,6 +77,11 @@ main article table{
 
 }
 
+main article table td:nth-child(2){
+    border: 10px dashed red
+
+}
+
  main section{
     border:5px dashed green;
     flex:2;
