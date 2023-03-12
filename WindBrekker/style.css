@@ -1,7 +1,7 @@
 body{
     margin: 0%;
     padding: 0%;
-    background: linear-gradient(0deg, rgb(175, 197, 75) 0%, rgb(237, 247, 192) 100%);
+    background: linear-gradient(0deg, rgb(237, 247, 192) 0%,rgb(255, 255, 255) 100%);
     /* background-image: url("https://e7.pngegg.com/pngimages/961/674/png-clipart-footage-leaf-green-video-leaf-white-leaf.png"); */
   }
 h1{
@@ -39,13 +39,12 @@ nav{
   margin: 2.5rem 0rem;
 }
 
-main td {
-  padding: 0.1rem 2rem;
-  text-align: center;
-}
+main {
+display: flex;
+justify-content: space-around;
+margin-top: 2em;
 
-main #tr td{
-  text-decoration: wavy;
+
 }
 
 nav ul li {
