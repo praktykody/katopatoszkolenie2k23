@@ -1,3 +1,7 @@
+img{
+    max-width: 100%
+}
+
 body{
     margin-left: 25px;
     background-color: aqua;
@@ -36,11 +40,14 @@ body header ul li a{
 	padding:0 .5rem;
 }
 main{
-    border: 10px dashed red
+    border: 10px dashed red;
+    display: flex
     }
 main article{
-    border: 10px dashed blue
+    border: 10px dashed blue;
+    flex: 1;
 }
 main section{
-    border: 10px dashed green
+    border: 10px dashed green;
+    flex: 2
 }
