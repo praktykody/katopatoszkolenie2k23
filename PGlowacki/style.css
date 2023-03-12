@@ -70,6 +70,19 @@ main section {
     border: 2px dashed green;
     flex: 1;
 }
-main section header table {
+main section header table td:nth-child(2){
     width: 100%;
+}
+main section header table{
+    width: 100%;
+}
+
+.zipParent{
+    border: 2px dashed red;
+    height: 1rem;
+}
+
+.zipChild{
+    border: 2px dashed blue;
+    position: absolute;
 }
