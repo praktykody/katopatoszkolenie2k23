@@ -1,5 +1,5 @@
 img{
-    max-width: 100;
+    max-width: 100%;
 }
 
 
@@ -8,11 +8,21 @@ h1{
     margin: .5rem;
 }
 
+body{
+	margin:0;
+	font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 body > header{
    
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 } 
 
 body > header ul{
@@ -38,15 +48,30 @@ body > header ul li a{
 main{
     border: 15px dashed red;
     display: flex;
-
+    max-width: 1920 px;
 }
 
 main article{
     border: 15px dashed blue;
+    flex: 1;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+
+}
+
+main article img{
+    border: 10px dashed pink;
+    aspect-ratio: 1/1;
+
+    border-radius: 30% ;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgb(255, 0, 0) 0px 15px 12px;
+    margin-bottom: 1rem ;
 
 }
 
 main section{
     border: 15px dashed green;
-
+    flex: 2;
 }
