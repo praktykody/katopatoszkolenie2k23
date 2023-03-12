@@ -4,7 +4,6 @@ body{
 }
 
 h1{
-    border: 2px solid tomato;
     margin: .5rem;
 }
 
@@ -15,7 +14,6 @@ ul{
     color: brown;
 }
 body header{
-    border: 5px dashed green;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +25,6 @@ body header ul{
 
 }
 body header ul li{
-    border: 5px dashed yellowgreen ;
     list-style: square; 
     margin: 0 1rem;
     padding: 0 .5rem;
