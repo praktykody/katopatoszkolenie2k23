@@ -5,6 +5,7 @@ body{
 
 h1{
     border: 2px solid tomato;
+    margin: .5rem;
 }
 
 ul{
@@ -17,7 +18,6 @@ body header{
     border: 5px dashed green;
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
     align-items: center;
 }
 body header ul{
