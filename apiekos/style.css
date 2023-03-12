@@ -98,7 +98,7 @@ body > header ul li a{
 main {
     /* border: 10px dashed red; */
     display: flex;
-    
+    height: 100vh;
     max-width: 1920px;
     justify-content: center ;
 }
@@ -175,3 +175,10 @@ width: 100%;
     width: 70%;
 
 }
+
+#contact {
+    height: 100vh;
+}
+
+/* Paski PROGRESU */
+

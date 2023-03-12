@@ -81,13 +81,13 @@ main article table td:nth-child(2) {
 }
 
 .zipParent {background-color: aliceblue;
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
     height: 1rem;
     position: relative;
 }
 
 .zipChild { background-color: yellow;
-    border: 2px dashed blue;
+    /* border: 2px dashed blue; */
     position: absolute;
     left: 0;
     height: 100%;
