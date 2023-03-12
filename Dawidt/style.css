@@ -1,0 +1,46 @@
+body
+{
+    margin-left:25pix;
+    background: blue;
+    
+    
+}
+
+h1
+{
+    font-family: 'Rubik Iso', cursive; 
+display: flex;
+justify-content: center;
+    color : white;
+    border: 4px solid tomato;
+    margin: .5rem
+}
+
+.first
+{
+    color:yellow;
+}
+body > header{
+    border:2px solid tomato;
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+body > header ul {
+   
+    display: flex;
+    padding:0%;
+
+
+
+}
+
+body > header ul li{
+    border: 2px dashed white;
+    list-style: none;
+    margin:0 .5rem;
+    padding:0 .5 rem;
+
+}
