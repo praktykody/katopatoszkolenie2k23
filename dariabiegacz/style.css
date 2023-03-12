@@ -1,3 +1,42 @@
-body {background-color: aquamarine; font-family:'Montserrat'; sans-serif;}
-h1 {color:aliceblue; font-size: 20px;}
-h2 {padding: 12px; border: 2px dashed red}
+body {
+    background-color: aquamarine;
+    font-family: 'Montserrat';
+    sans-serif
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+h2 {
+    padding: 12px;
+    border: 2px dashed red
+}
+
+/* odniesienie do bezprosredniego dziecka body */
+body > header {
+    border: 5px dashed green;
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+}
+
+body > header ul {display: flex; padding: 0;}
+
+body > header ul li {
+    border: 5px dashed blue;
+    list-style: none;
+    margin: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* <!--element.style {display: flex-start; flex-end, center}-->
+<!--justify-content: space-between; space-evenly; space-around - ustawienie miedzy elementami prawo-lewo-->
+<!--align-items: start; end; center - gora dol--> */
+/* flex-direction: row; column; reverse */
+/* flexbox froggy */
+/* procenty odnosza sie do rodzicow, vw do wielkosci okna */
+/* em zaleza od miejsca w ktorym sie znajduja, remy dotycza stalej jednej wartosci */ 
+/* 2em, gdy mamy EM1, EM2 i EM3 EM1 15 px, EM2 bedzie 2xdomyslna czcionka 30 px = 60 px, EM3 bedzie 120px */
