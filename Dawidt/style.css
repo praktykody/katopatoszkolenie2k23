@@ -70,11 +70,16 @@ max-width: 1920px;
 }
 main article{
     padding: 0 2rem;
-    border:5px dashed yellow
+    border:5px dashed yellow;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     
     }
 main article img{
     border:2px dashed;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 main section{
