@@ -9,6 +9,7 @@ body{
     background-color: aqua;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 h1{
     margin: .5rem;
