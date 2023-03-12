@@ -1,0 +1,29 @@
+h1{
+    
+    margin: .5rem;
+}
+
+body > header{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+body > header ul{
+   
+    display:flex;
+    padding: 0;
+}
+
+body > header ul li{
+   
+    list-style: nome;
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+    
+
+}
+
+
+

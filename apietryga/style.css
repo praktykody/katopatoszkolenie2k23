@@ -24,6 +24,12 @@ body > header ul li {
 	text-decoration: none;
 }
 
+body > header ul li a{
+	display:flex;
+	align-items: center;
+	text-decoration: none;
+}
+
 h1 {
 	margin: .5rem;
 }
