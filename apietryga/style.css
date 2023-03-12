@@ -1,19 +1,26 @@
 
 body{
-
+	margin:0;
 	font-family: 'Montserrat', sans-serif;
+}
+/* > odniesienie do BEZPOŚREDNIEGO dziecka  */
+body > header{ 
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body > header ul {
+	display:flex;
+	padding:0;
+}
+
+body > header ul li {
+	list-style:none;
+	margin:0 .4rem;
+	padding:0 .5rem;
 }
 
 h1 {
-	border: 2px solid tomato;
-
+	margin: .5rem;
 }
-
-ul {
-	font-size:30px;
-	border: 2px solid tomato;
-}
-
-.first{
-	color:red;
-} 
