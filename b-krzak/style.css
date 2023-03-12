@@ -6,26 +6,30 @@ body{
 }
 
 h1 {
-    border: 5px solid  pink 
-    padding:0px; 
+ 
+     padding:0px; 
+    margin: .5rem;
  
 
-    border: 5px  solid rgb(128, 11, 50);
+   
 }
 
  body > header{
     border: 5px dashed pink;
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
  body > header ul {
-   border:5px dashed green
+ 
    display:flex; 
    padding:0;
  }
 
  body > header ul li {
-    border:5px dashed blue
-    list-style-type: style none;
-    mar
+    
+    list-style-type:  none;
+    margin: 0 .5rem;
+    padding:0 .5rem;
+
  }
