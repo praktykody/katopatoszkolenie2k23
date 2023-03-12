@@ -44,14 +44,20 @@ body header ul li a{
 main{
     border: 10px dashed red;
     display: flex;
-    padding:0 2rem;
+    
     max-width: 1920;
     }
 main article{
     border: 10px dashed blue;
     flex: 1;
+    padding:0 2rem;
 }
 main section{
     border: 10px dashed green;
     flex: 2
+}
+main article img{
+    border-color: 10px dashed green;
+    aspect-ratio: 1/1;
+
 }
