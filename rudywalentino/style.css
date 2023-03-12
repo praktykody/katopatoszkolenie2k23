@@ -31,4 +31,7 @@ body header ul li{
 }
 body header ul li a{
     align-items: center;
+    list-style:none;
+	margin:0 .4rem;
+	padding:0 .5rem;
 }
