@@ -1,0 +1,40 @@
+body{
+ font-family: 'Montserrat', sans-serif;
+ font-family: 'Pacifico', cursive;}
+body
+
+h1{
+    
+    margin: .5rem;
+    color: blue;
+
+}
+
+body > header{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+body > header ul{
+   
+    display:flex;
+    padding: 0;
+}
+
+body > header ul li{
+   
+    list-style: none;
+    margin: 0 .5rem;
+    padding: 0 .5rem;
+    
+
+}
+body > header ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+

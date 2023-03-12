@@ -8,25 +8,35 @@ body > header{
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
+	text-decoration: none;
 }
 
 body > header ul {
 	display:flex;
 	padding:0;
+	text-decoration: none;
 }
 
 body > header ul li {
 	list-style:none;
 	margin:0 .4rem;
 	padding:0 .5rem;
+	text-decoration: none;
 }
 
 body > header ul li a{
 	display:flex;
 	align-items: center;
 	text-decoration: none;
+	color:#000;
 }
 
 h1 {
 	margin: .5rem;
+}
+body > header ul li a {
+	list-style:none;
+	margin:0 .4rem;
+	padding:0 .5rem;
+	text-decoration: none;
 }
