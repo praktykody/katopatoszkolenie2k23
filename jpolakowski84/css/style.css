@@ -1,18 +1,29 @@
+*{
+box-sizing: border-box;
+}
+
+img{max-width: 100%;
+}
+
 body{
     font-family: "oswald";
-    background-color: antiquewhite;
+    background-color: rgba(112, 112, 112, 0.525);
     font-size: 1rem;
     font-family: 'Oswald', sans-serif;
-
-
-   }
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    }
 
    body > header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
    }
-
-   body>header ul{
+   
+ 
+   body > header ul{
     display: flex;
     padding: 0;
    }
@@ -21,21 +32,85 @@ body{
     list-style: none;
     margin: 0 .5rem;
     padding: 0 .5rem;
-   
-   }
+    }
 
-   table{
-    border: 2px solid black;
-   }
+table{
+    border: 2px solid #000;
+    border-radius: 10px;
+
+}
+/*ustawienie skali w ccs patrz ścieżka scale w html */
+   table td:nth-child(2) {   
+   min-width:200px;
+}
+
+table td:nth-child(2) .scale{ 
+    height:1rem;
+    background: #000;
+    border-radius:15px;
+}
   
 h1{
     margin: .5rem;
 }
 
-
 h2{
     padding: 12px;
-    border: 2px dashed rgb(46, 201, 62);
-    border: 2px solid purple;
     display:inline-flex
 }
+
+main{
+    display: flex;
+    
+}
+main article{
+    flex:1;
+    padding:0 .5rem;
+    max-width: 1920px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+main section{
+    flex:2;
+    padding: 0 .5rem; 
+}
+
+main article img{
+    border-radius: 25%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.25) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    margin-bottom: 1rem;
+}
+/*tworzenie suwakow*/
+main article table{
+    width: 100%;
+}
+
+main article table td:nth-child(1){
+    width: 100%;
+}
+
+.zipParent{
+    border: 3px solid #000;
+    border-radius: 5px;
+    height: 1rem;
+    position: relative;
+}
+.zipChild{
+    border-radius: 2px;
+    background-color: rgb(119, 255, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+main article table tr:nth-child(1) .zipChild{
+    width: 90%;
+}   
+main article table tr:nth-child(2) .zipChild{
+    width: 50%;
+}   
+main article table tr:nth-child(3) .zipChild{
+    width: 76%;
+}   
+/* tworzenie suwaków*/
