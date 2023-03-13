@@ -7,17 +7,29 @@
 	<title>#katopatoszkolenie2k23</title>
 	<style>
 		:root{
-			--navheight:4rem;
+			--navheight:5rem;
 		}
 		*{ box-sizing: border-box }
-		body{ margin:0 }
+		html, body{ 
+			margin:0; 
+			height:100vh;
+			position: relative;
+		}
 		nav{ 
 			display:flex;
 			align-items: center;
+			position:relative;
+		}
+		nav.hidden{
+			/* border:2px dashed red; */
+			top: calc( var(--navheight) - 2 * var(--navheight) );
+			position:absolute;
+			width:100vw;
 		}
 		.usersField{
 			display:flex;
 			overflow-y: scroll;
+			overflow-y: hidden;
 			height:var(--navheight);
 			align-items: center;
 		}
@@ -38,7 +50,14 @@
 		}
 		iframe{
 			width:100%;
-			height:calc( 100vh - var(--navheight));
+			height:calc( 100vh - (var(--navheight) + 4px));
+			margin:0;
+		}
+		.toggler{
+			cursor:pointer;
+			position:absolute;
+			right: 0;
+			top:100%;
 		}
 	</style>
 </head>
@@ -47,11 +66,14 @@
 		<div class="prev" onclick="prev()">⬅️</div>
 		<div class="usersField"></div>
 		<div class="next" onclick="next()">➡️</div>
+		<div class="toggler" onclick="toggle(true)"></div>
 	</nav>
 	<iframe></iframe>
 <script>
-	let currentUser = 0;
+	let currentUser = localStorage.getItem('currentUser') ? localStorage.getItem('currentUser') : 0 ;
+	const nav = document.querySelector('nav')
 	const iframe = document.querySelector('iframe')
+	const toggler = document.querySelector('.toggler')
 	const usersField = document.querySelector('.usersField')
 	const users = [
 		'akoczor',
@@ -68,24 +90,34 @@
 		'WindBrekker',
 		'winsmarwins'
 	]
-
-	for(const user of users){
+	users.forEach( user => {
 		const link = document.createElement('div')
 		link.innerHTML = user
 		link.addEventListener('click', () => { currentUser = users.indexOf( user ); show() })
 		usersField.append(link)
-	}
+	})
 
-	const prev = () => { currentUser = currentUser > 0 ? currentUser - 1 : users.length - 1; show() }
-	const next = () => { currentUser = currentUser < users.length - 1 ? currentUser + 1 : 0; show() }
+	const prev = () => { currentUser = currentUser > 0 ? currentUser * 1 - 1 : users.length - 1; show() }
+	const next = () => { currentUser = currentUser < users.length - 1 ? currentUser * 1 + 1 : 0; show() }
 	const show = () => {
 		usersField.querySelectorAll('div').forEach(b => {
-			b.classList.remove('active')
-			if(b.innerText == users[currentUser]){
-				b.classList.add('active')
-			}
+			b.innerText == users[currentUser] ? b.classList.add('active') : b.classList.remove('active')
 		})
 		iframe.src = users[currentUser]
+		localStorage.setItem('currentUser', currentUser);
+	}
+	const toggle = (change) => {
+		// console.log(localStorage.getItem('toggle'))
+		if(localStorage.getItem('toggle') == "true"){
+			if(change){  localStorage.setItem('toggle', false)  }
+			nav.classList.remove('hidden')
+			toggler.innerHTML = "⬆️"
+		}else{
+			if(change){  localStorage.setItem('toggle', true) }
+			nav.classList.add('hidden')
+			toggler.innerHTML = "⬇️"
+		}
+		if(change){  location.reload() }
 	}
 
 	document.addEventListener('keydown', ({ key }) => {
@@ -94,6 +126,7 @@
 	})
 
 	show()
+	toggle()
 </script>    
 </body>
 </html>
