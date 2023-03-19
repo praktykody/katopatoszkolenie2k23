@@ -8,13 +8,17 @@ body{
     background: linear-gradient(0deg, rgb(209, 224, 142) 0%,rgb(255, 255, 255) 100%);
     /* background-image: url("https://e7.pngegg.com/pngimages/961/674/png-clipart-footage-leaf-green-video-leaf-white-leaf.png"); */
 }
+body > header #toggler,
+body > header label{
+  display: none;
+}
 footer{
   text-align: center;
 }
 h1{
     color:rgb(237, 247, 192);
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 h3{ 
   padding: 12px;
@@ -42,10 +46,10 @@ main {
 display: flex;
 justify-content: center;
 margin-top: 2em;
+padding: 5%;
 }
 main article{
   width: 30vw;
-  margin: 5%0%5%5%;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhi5yJOLiPy_dZ_eWFVIIC3FYwkOVnEEC6_A&usqp=CAU");
   display: flex;
   justify-content: center;
@@ -56,7 +60,6 @@ main article{
 }
 main section{
   width: 70vw;
-  margin: 5%5%5%0%;
   flex:3;
   background-color: white;
   border: 0.3rem solid beige;
@@ -64,9 +67,12 @@ main section{
 
 }
 main table{
-  width: 100%;
-  padding: 1rem;
-  margin: 1rem 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0.1rem;
+  margin: 0.5rem;
   background-color: white;
   border: 0rem solid beige;
 }
@@ -86,12 +92,13 @@ nav{
   font-weight: bold;
   justify-content: space-evenly;
   font-size: 1.2rem;
+  max-width: 100vw;
 }
 .navi{
   padding: 0.5rem;
   background-color: rgb(227, 248, 179);
   color:rgb(0, 0, 0);
-  margin: 2.5rem 0rem;
+  margin: 1.5rem 0rem;
   border: 0.3rem solid rgb(218, 243, 163) ;
 }
 nav ul {
@@ -107,10 +114,17 @@ nav ul li a {
   flex-direction: row;
   justify-content: center;
 }
+thead tr{
+  display: flex;
+  justify-content: center;
+}
+thead tr:nth-child(2){
+  display: flex;
+  justify-content: space-around;
+}
 .titles{
   font-weight: bold;
   font-size: 1.5rem;
-  margin: 1rem 0%;
   text-align: center;
 }
 .zipParent{
@@ -126,4 +140,41 @@ nav ul li a {
   
 
 
+}
+@media(max-width:768px){
+  #toggler:checked ~ ul {
+    right:0%
+  }
+  body > header label{
+      display: flex;
+      color: beige;
+      text-decoration: dashed;
+    }
+  main {
+    flex-direction: column;
+    }
+    main section{
+      width: 100%;
+    }
+    main article{
+      width: 100%;
+    }
+    .navi{
+      margin: 0;
+    }
+    nav{
+      position: relative;
+    }
+    nav ul{
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      right: -10rem;
+      transition: .5s;
+    }
+    nav ul li a{
+      justify-content: start;
+    }
+   
+    
 }
