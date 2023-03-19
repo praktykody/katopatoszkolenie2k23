@@ -16,6 +16,7 @@ h1 {
 h2 {
     padding: 12px;
     border: 2px dashed red;
+    margin: 0;
 }
 
 /* odniesienie do bezprosredniego dziecka body */
@@ -54,6 +55,10 @@ main {
 main article {
     border: 2px dashed blue;
     flex: 1;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main section {
@@ -62,13 +67,14 @@ main section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 2rem;
 }
 
 main article img {
     border: 10px dashed pink;
     border-radius: 50%;
     box-shadow: 0 0 20px black;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 main article table {
@@ -81,18 +87,105 @@ main article table td:nth-child(2) {
 }
 
 .zipParent {background-color: aliceblue;
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
     height: 1rem;
     position: relative;
 }
 
 .zipChild { background-color: yellow;
-    border: 2px dashed blue;
+    /* border: 2px dashed blue; */
     position: absolute;
     left: 0;
     height: 100%;
     width: 100%;
 }
+/* style  ładowane tylko na mobile */
+@media (max-width: 768px) {
+
+    body {
+        border: 10px dashed blue;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    nav {
+        /* border: 5px dashed blue; */
+        position: relative;
+    }
+
+    body > header ul {
+        border: 5px dashed red;
+        background-color: #eee;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: -8rem;
+        transition: .5s;
+        padding: 1rem 1rem .5rem 1rem;
+    }
+
+    body > header ul li, body > header ul li a {
+        border: 5px dashed green;
+        margin: 0;
+        margin-bottom: .25rem;
+        padding: 0;
+    }
+    body > header #toggler,
+body > header label {
+    display: none;
+    
+}
+
+#toggler:checked ~ ul {
+    border: 2px dashed red;
+}
+
+body > header label {
+    display: flex;
+}
+
+.burger {
+    border: 2px dashed red;
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+    position: relative;
+}
+
+.burger div {
+    background-color: #000;
+    /* border: 2px dashed blue; */
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    transition: .5sek;
+}
+.burger div:nth-child(2) {
+    top:40%
+}
+
+.burger div:nth-child(3) {
+    top:70%;
+}
+
+#toggler:checked ~ .burger div:nth-child(1) {
+    transform: rotate(45deg);
+    top: 40%;
+}
+
+#toggler:checked ~ .burger div:nth-child(2) {
+    opacity: 0;
+}
+
+#toggler:checked ~ .burger div:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 40%;
+}
+}
+
+
 
 /* <!--element.style {display: flex-start; flex-end, center}-->
 <!--justify-content: space-between; space-evenly; space-around - ustawienie miedzy elementami prawo-lewo-->

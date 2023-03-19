@@ -1,177 +1,153 @@
-* {
+*{
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Golos Text', sans-serif;
-     margin: 0;
+
+img{
+    max-width: 100%;
+}
+
+body{
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    
-    
+    align-items: center;
+    font-family: 'Signika Negative';
+    margin: 0;
+    padding: 0;
+
 }
 
-h1 {
-    color: rgb(241, 241, 241);
-    font-size: 3rem;
-    margin:.5rem;
-    font-family: 'Megrim', bold;
-    
-    /* border: 2px solid green; */
-    
-    
-}
-h2 {
-    color: rgb(42, 151, 25);
-    
-}
-/* CSS dla pierwszej tabeli */
-.emotki {  
-    border: 2px dashed  aqua;
-    width: 100%;
-    border-collapse: collapse;
-} 
-h3 {
-    font-size: 3rem;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-}
 
-h4 {
-    font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
+h1{
+    color: white;
+    font-size: 30px;
+    margin: .5rem;
+    font-family: 'Henny Penny';
 }
-.emotki  td {  
-    border: 2px dashed  aqua;
-   
-     
-} 
-/* Odniesienie do bezpośredniego dziecka body */
-body > header { 
-   
-    /* border: 5px dashed green; */
+/* Odniesienie do bezpośredniego dziecka */
+body > header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(img/bg.jpg);
-    /* background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(4,115,191,1) 69%, rgba(0,217,255,1) 100%); */
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     width: 100%;
+    position: sticky;
+    top: 0
+    
+}
+body > header #toggler,
+body > header #label{
+   display: none;
 }
 
-body > header ul {
-    /* border:5px solid blueviolet; */
+
+
+body > header ul{
     display: flex;
     padding: 0;
-    width: 100%;
 }
 
-body > header ul li {
-    /* border: 2px solid blueviolet; */
+body >header ul li{
+
     list-style: none;
-    margin:0 .4rem;
-    padding:0 .5rem;
-    font-size: 1rem;
-    
-    
-    
+    font-size: 1.25rem;
+    margin: 0 .5rem;
+    padding: 0 .5rem;
 }
 
-body > header ul li a{
-    /* border: 2px solid blueviolet; */
-    display:flex;
+body >header ul li a{
+    display: flex;
     align-items: center;
     text-decoration: none;
     color: white;
-   
-    
-    
 }
 
-.member {
-    padding: 1rem;
-    width: 13rem;
-}
+main{
 
-main {
-    /* border: 10px dashed red; */
     display: flex;
+    max-width: 100%;
     
-    max-width: 1920px;
-    justify-content: center ;
+    
 }
 
-main article {
-    /* border: 10px dashed blue; */
+main article{
+
     flex: 1;
-    padding: 0 10rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding: 2rem;
 }
 
-main section {
-     /* border: 10px dashed green; */
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    padding: 0 7rem;
-    
-    
-}
+main article img{
 
-main article img {
-    /* border: 10px dashed blue; */
-
-    padding: 0 1rem;
     aspect-ratio: 1/1;
-     border-radius: 50%; 
-     box-shadow: 0 0 30px rgb(14, 93, 196); 
-    
-    
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgb(18, 54, 18);
 }
 
-main article img {
-    
-    margin-top: 15px;
-    
-    
+
+main section{
+
+    flex: 2;
+    padding: 1rem 2rem;
 }
 
-section ol li {
-    
-    list-style: none;
-}
 
-sup {
-    font-size:1rem;
-    color: white;
-}
-
-main article table {
+main article table{
     width: 100%;
 }
 
 main article table td:nth-child(2){
-border: 2px solid red;
+
 width: 100%;
 }
 
-.zipParent {
-    background: rgb(255, 255, 255);;
-    border: 5px solid black;
+
+.zipParent{
     height: 1rem;
     position: relative;
-    border-radius: 5px;;
+    border: 3px solid black;
+    border-radius: 5px;
 }
 
-.zipChild {
-    background: rgb(253, 2, 2);;
-    border: 2px solid black;
+
+.zipChild{
+
     position: absolute;
     height: 100%;
     width: 70%;
-
+    background: red;
+   
 }
+
+h2{
+    margin: 0;
+    padding: 1rem;
+}
+
+/* Style ładowane tylko na mobile */
+@media(max-width: 768px){
+
+  
+
+    main{
+        flex-direction: column;
+    }
+
+    nav{
+        position: relative;
+        
+       
+    }
+
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: gray;
+    }
+}
+
+
+
