@@ -124,6 +124,7 @@ main section header table tr:nth-child(1) .zipChild{
         top: -25rem;
         transition: 1s;
         background-color: lightgreen;
+        border: 5px solid black;
     }
     
 
@@ -142,10 +143,27 @@ main section header table tr:nth-child(1) .zipChild{
     }
 
     .burger{
-        border: 2px dashed red;
         width: 2rem;
         height: 2rem;
         margin-right: .5rem;
-        
+        position: relative;
     }
+
+    .burger div{
+        position: absolute;
+        width: 100%;
+        background-color: black;
+        height: 20%;
+
+    }
+
+    .burger div:nth-child(2){
+        top: 40%;
+    }
+    .burger div:nth-child(3){
+        top: 80%;
+    }
+
+
+
 }
