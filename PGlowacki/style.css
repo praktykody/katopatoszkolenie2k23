@@ -12,6 +12,7 @@ body{
     font-family: 'Roboto Mono', monospace;
     background-image: url("https://c.pxhere.com/images/0e/3b/2f82fcd6dbbdf2f7126a14ed4dad-1672622.jpg!s2");
     display: flex;
+    background-size: cover;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
@@ -28,7 +29,7 @@ h1{
 }
 h2{
     padding: 12px;
-    color: black;
+    color: blue;
     margin: 0;
 }   
 
