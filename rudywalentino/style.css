@@ -112,10 +112,11 @@ border: yellowgreen;
     }
 
     #toggler:checked ~ ul{
+        border: 2px dashed red;
         top: 100%;
     }
 
      body> header label{
-     display: flex;
+     display:flex
     }
 }
