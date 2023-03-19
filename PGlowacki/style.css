@@ -31,17 +31,24 @@ h2{
     color: black;
     margin: 0;
 }   
+
 body > header{
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%
+    width: 100%;
+    position: sticky;
+    top:0;
+    text-decoration: none;
+    z-index: 1;
 }
+
 body > header ul {
     display: flex;
     padding: 0;
     align-items: flex-start;
 }
+
 body > header ul li {
     list-style:none;
     margin: .5rem;
@@ -49,6 +56,7 @@ body > header ul li {
     text-decoration: none;
     justify-content: flex-end;
 }
+
 body > header #toggler,
 body > header label{
     display: none;
@@ -154,6 +162,7 @@ main section header table tr:nth-child(1) .zipChild{
         width: 100%;
         background-color: black;
         height: 20%;
+        transition: 1s;
 
     }
 
@@ -164,6 +173,13 @@ main section header table tr:nth-child(1) .zipChild{
         top: 80%;
     }
 
+    #toggler:checked ~ .burger div:nth-child(1){
+        transform: rotate(45deg);
+        top: 40%;
+    }
 
-
+    #toggler:checked ~ .burger div:nth-child(3){
+        transform: rotate(-45deg);
+        top: 40%;
+    }
 }
