@@ -27,10 +27,17 @@ h2{
     margin: 0;
 }
 body > header{
-    width: 100%;
+    align-items: center;
+    background: #fff;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    position: sticky;
+    text-decoration: none;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    
+    
 } 
 body > header #toggler,
 body > header label {
@@ -51,18 +58,17 @@ body > header ul li{
     margin: 0 .5rem;
     padding: 0 .5rem;
     
-
 }
 body > header ul li a {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
-
 main{
-    border: 2px solid red;
+    max-width: 1920;
+    /*border: 2px solid red; */
     display: flex;
-    padding: 2rem;
+    padding: o 5rem;
 }
 main article{
     border: 2px solid rgb(167, 8, 21);  
@@ -120,6 +126,7 @@ main article table td:nth-child(2){
 @media(max-width:760px){
     
     main{
+            padding: 0; 
             flex-direction: column;
 
         }
@@ -200,6 +207,7 @@ main article table td:nth-child(2){
     #toggler:checked ~ .burger div:nth-child(3){
         transform: rotate(-45deg);
         top: 40%;
+    }
 
 
 }

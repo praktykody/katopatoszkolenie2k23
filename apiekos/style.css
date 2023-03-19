@@ -22,17 +22,18 @@ h1{
     color: white;
     font-size: 30px;
     margin: .5rem;
-    font-family: 'Henny Penny';
+    font-family: 'Times New Roman';
 }
 /* Odniesienie do bezpośredniego dziecka */
 body > header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-image: linear-gradient(to right top, #0a68f7, #8f0baa, #06dbee, #33443d, #eb1298);
     width: 100%;
     position: sticky;
-    top: 0
+    top: 0;
+    z-index: 1;
     
 }
 body > header #toggler,
@@ -66,6 +67,7 @@ main{
 
     display: flex;
     max-width: 100%;
+    padding: 0 5rem;
     
     
 }
@@ -137,17 +139,83 @@ h2{
 
     nav{
         position: relative;
+
         
        
     }
 
-    nav ul{
+    body > header ul{
         flex-direction: column;
         position: absolute;
         right: 0;
         background-color: gray;
+        top: -10rem;
+        transition: .5s;
+        padding: 1rem 1rem .5rem 1rem;
+        
+    } 
+
+    
+
+
+
+
+    #toggler:checked ~ ul{
+        top: 100%;
+
+    }
+
+    body > header ul li{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    body > header label{
+        display: flex;
+       
+
     }
 }
 
+.hamburger {
+    /* border: 2px dashed blue; */
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+    position: relative;
+}
 
+.hamburger div {
+    /* border: 2px dashed green; */
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    transition: 0.5s;
+}
 
+.hamburger div:nth-child(1)  {
+    top: 10%;
+}
+
+.hamburger div:nth-child(2){
+    top: 40%;
+}
+.hamburger div:nth-child(3) {
+    top: 70%;
+}
+
+#toggler:checked ~ .hamburger div:nth-child(1) {
+    transform: rotate(45deg);
+    top:40%;
+}
+
+#toggler:checked ~ .hamburger div:nth-child(3) {
+    transform: rotate(-45deg);
+    top:40%;
+}
+
+#toggler:checked ~ .hamburger div:nth-child(2) {
+    display: none;
+}
