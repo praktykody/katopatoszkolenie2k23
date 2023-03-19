@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 img{
     max-width: 100;
 }
@@ -78,7 +81,26 @@ main article table{
 }
 
 main article table td:nth-child(2){
-    border: 10px dashed red
+    width:100%
+
+}
+
+.zipParent{
+    border: 3px solid black;
+    border-radius: 15px;
+    border:2px dashed yellowgreen;
+    height:1rem;
+    position:relative;
+}
+
+.zipChild{
+    background-color: aqua;
+    border: 2px dashed pink;
+    border-radius: 15px;
+    position:absolute;
+    height: 100%;
+    width: 60%;
+    
 
 }
 
