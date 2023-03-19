@@ -30,11 +30,21 @@ justify-content: center;
 {
     color:yellow;
 }
+
+
+
+body >header #toggler,
+body>header label{
+    display :none;
+}
+
+
 body > header{
     border:2px solid tomato;
     display:flex; 
     justify-content: space-between;
     align-items: center;
+    width:100%;
 
 }
 
@@ -124,7 +134,7 @@ main section{
 
 
 
-    
+
     /* widok na telefonie , 
     jezeli rozdzielczosc bedzie mniejsza niz 768
     nadpiszemy style*/
@@ -142,10 +152,35 @@ nav{
 }
 
 
-nav ul{
+
+    body>header ul{
+        background:#eee;
 border:5px dashed blue;
 flex-direction: column;
 position:absolute;
 right: 0;
+top:-12rem ;
+transition: .5s;
+padding:1rem 1rem .5rem 1rem;
+
+}
+
+/* nav ul li{ */
+    body>header ul li a,
+    body>header ul li{
+    border: 2px dashed rebeccapurple;
+    margin:0;
+    padding:0;
+    margin-bottom:.25rem;
+}
+
+#toggler:checked ~ ul{
+
+    top:100%;
+}
+
+
+body >header label{
+    display:flex;
 }
     }
