@@ -85,13 +85,15 @@ main article img{
 }
 
 main section{
-    border:5px dashed black
+    border:5px dashed black;
+    padding: 1rem 2rem;
     
     }
 
     main article table{
 
         width: 100%;
+        margin-bottom: .83em;
 
     }
     main article table td:nth-child(2){
@@ -117,4 +119,33 @@ main section{
 
 
     }
+
+
+
+
+
     
+    /* widok na telefonie , 
+    jezeli rozdzielczosc bedzie mniejsza niz 768
+    nadpiszemy style*/
+    @media(max-width:768px){
+      
+
+main {
+    flex-direction: column;
+}
+
+/* HAMBURGER */
+nav{
+    border: 5px dashed yellow;
+    position: relative;
+}
+
+
+nav ul{
+border:5px dashed blue;
+flex-direction: column;
+position:absolute;
+right: 0;
+}
+    }
