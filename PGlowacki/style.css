@@ -55,6 +55,13 @@ body > header #toggler,
 body > header label{
     display: none;
 }
+    #Toggler:checked ~ nav ul{
+        top: 100%;
+    }
+
+body > header label{
+    display: flex;
+}
 table {
     background-color: aqua;
 }
@@ -77,7 +84,7 @@ main section header{
     flex-direction: column;
     align-items: center;
     padding: 1rem 2rem;
-    border: 5px dashed black;
+
 }
 main section {
     flex: 1;
@@ -88,7 +95,7 @@ main section header table td:nth-child(2){
 main section header table{
     width: 100%;
 
-    border: 10px dashed red;
+
 }
 
 .zipParent{
@@ -113,13 +120,14 @@ main section header table tr:nth-child(1) .zipChild{
         flex-direction: column;
     } 
     nav{
-        border: 5px dashed green;
+        border: 4px dashed black;
         position: relative;
     }
     nav ul{
-        border: 5px dashed black;
+        border: 4px dashed black;
         flex-direction: column;
         position: absolute;
         right: 0;
+        top: -25rem;
     }
 }
