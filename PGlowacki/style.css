@@ -154,6 +154,7 @@ main section header table tr:nth-child(1) .zipChild{
         width: 100%;
         background-color: black;
         height: 20%;
+        transition: 1s;
 
     }
 
@@ -162,6 +163,16 @@ main section header table tr:nth-child(1) .zipChild{
     }
     .burger div:nth-child(3){
         top: 80%;
+    }
+
+    #toggler:checked ~ .burger div:nth-child(1){
+        transform: rotate(45deg);
+        top: 40%;
+    }
+
+    #toggler:checked ~ .burger div:nth-child(3){
+        transform: rotate(-45deg);
+        top: 40%;
     }
 
 
