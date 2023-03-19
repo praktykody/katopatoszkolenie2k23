@@ -29,7 +29,7 @@ body > header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to right top, #0a68f7, #8f0baa, #06dbee, #33443d, #eb1298);
+    background-image: linear-gradient(to right top, #1469e9, #261bbb, #06dbee, #33443d, #17afb9);
     width: 100%;
     position: sticky;
     top: 0;
