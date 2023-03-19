@@ -60,6 +60,7 @@ main{
     border: 10px dashed red;
     display: flex;
     max-width: 1920;
+    padding: 0 .5rem;
     }
 main article{
     border: 10px dashed blue;
@@ -112,7 +113,7 @@ border: yellowgreen;
         flex-direction: column;
         position: absolute;
         right: 0;
-        top: -18rem;
+        top:-18rem;
         transition: .5s;
         padding: 1rem 1rem 1rem 1rem;        
     }

@@ -127,6 +127,9 @@ main article table tr:nth-child(2) .zipChild{
 main article table tr:nth-child(3) .zipChild{
     width: 76%;
 }   
+footer{
+    
+}
 /* tworzenie suwaków*/
 
 /* style na urządzeniach mobilnych*/
@@ -207,7 +210,7 @@ main article table tr:nth-child(3) .zipChild{
     }   
     #toggler:checked ~ .burger div:nth-child(1){
         transform: rotate(45deg);
-        top:40%
+        top:45%
     }
     #toggler:checked ~ .burger div:nth-child(2){
         opacity: 0;
