@@ -1,17 +1,27 @@
+img{
+    max-width: 100;
+}
+
 body{
     margin-left: 25px;
 
     --background-color:#df99c1;
     --foreground-color:#fff;
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+body > header h2 {
+    border: 10px dotted red
 }
 
 h1 {
  
      padding:0px; 
     margin: .5rem;
- 
 
-   
 }
 
  body > header{
@@ -31,5 +41,49 @@ h1 {
     list-style-type:  none;
     margin: 0 .5rem;
     padding:0 .5rem;
+    align-items: center;
+    text-decoration: none;
+    
 
  }
+ main {
+    border:5px dashed red;
+    display:flex;
+    max-width: 1920px;
+    
+ }
+ main article{
+    border:5px dashed yellow;
+    flex:1;
+    padding: 0% 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+
+ }
+ main article img{
+    border: 5px dashed blue;
+    aspect-ratio: 1/1;
+    border-radius: 25%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    
+ }
+
+main article table{
+    width: 100%;
+
+}
+
+main article table td:nth-child(2){
+    border: 10px dashed red
+
+}
+
+ main section{
+    border:5px dashed green;
+    flex:2;
+ }
+

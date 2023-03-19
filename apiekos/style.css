@@ -1,17 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Golos Text', sans-serif;
-    
+     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     
     
 }
 
 h1 {
-    color: rgb(255, 165, 55);
-    font-size: 2rem;
+    color: rgb(241, 241, 241);
+    font-size: 3rem;
     margin:.5rem;
+    font-family: 'Megrim', bold;
+    
     /* border: 2px solid green; */
     
-       
+    
 }
 h2 {
     color: rgb(42, 151, 25);
@@ -20,8 +29,25 @@ h2 {
 /* CSS dla pierwszej tabeli */
 .emotki {  
     border: 2px dashed  aqua;
-
+    width: 100%;
+    border-collapse: collapse;
+} 
+h3 {
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
 }
+
+h4 {
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+.emotki  td {  
+    border: 2px dashed  aqua;
+   
+     
+} 
 /* Odniesienie do bezpośredniego dziecka body */
 body > header { 
    
@@ -29,12 +55,17 @@ body > header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url(img/bg.jpg);
+    /* background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(4,115,191,1) 69%, rgba(0,217,255,1) 100%); */
+    width: 100%;
 }
 
 body > header ul {
     /* border:5px solid blueviolet; */
     display: flex;
     padding: 0;
+    width: 100%;
 }
 
 body > header ul li {
@@ -44,5 +75,110 @@ body > header ul li {
     padding:0 .5rem;
     font-size: 1rem;
     
+    
+    
 }
+
+body > header ul li a{
+    /* border: 2px solid blueviolet; */
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+   
+    
+    
+}
+
+.member {
+    padding: 1rem;
+    width: 13rem;
+}
+
+main {
+    /* border: 10px dashed red; */
+    display: flex;
+    height: 100vh;
+    max-width: 1920px;
+    justify-content: center ;
+}
+
+main article {
+    /* border: 10px dashed blue; */
+    flex: 1;
+    padding: 0 10rem;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main section {
+     /* border: 10px dashed green; */
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0 7rem;
+    
+    
+}
+
+main article img {
+    /* border: 10px dashed blue; */
+
+    padding: 0 1rem;
+    aspect-ratio: 1/1;
+     border-radius: 50%; 
+     box-shadow: 0 0 30px rgb(14, 93, 196); 
+    
+    
+}
+
+main article img {
+    
+    margin-top: 15px;
+    
+    
+}
+
+section ol li {
+    
+    list-style: none;
+}
+
+sup {
+    font-size:1rem;
+    color: white;
+}
+
+main article table {
+    width: 100%;
+}
+
+main article table td:nth-child(2){
+border: 2px solid red;
+width: 100%;
+}
+
+.zipParent {
+    background: rgb(255, 255, 255);;
+    border: 5px solid black;
+    height: 1rem;
+    position: relative;
+    border-radius: 5px;;
+}
+
+.zipChild {
+    background: rgb(253, 2, 2);;
+    border: 2px solid black;
+    position: absolute;
+    height: 100%;
+    width: 70%;
+
+}
+
+#contact {
+    height: 100vh;
+}
+
+/* Paski PROGRESU */
 
