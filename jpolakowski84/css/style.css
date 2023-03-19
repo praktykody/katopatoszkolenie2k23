@@ -98,13 +98,10 @@ main article img{
 /*tworzenie suwakow*/
 main article table{
     width: 100%;
-   
-}
-
+   }
 main article table td:nth-child(1){
     width: 100%;
 }
-
 .zipParent{
     border: 3px solid #000;
     border-radius: 5px;
@@ -127,9 +124,7 @@ main article table tr:nth-child(2) .zipChild{
 main article table tr:nth-child(3) .zipChild{
     width: 76%;
 }   
-footer{
-    
-}
+
 /* tworzenie suwaków*/
 
 /* style na urządzeniach mobilnych*/
@@ -178,9 +173,6 @@ footer{
     body > header label{
         display: flex;
     }
-    /* body> header #toggler{
-        display:flex;
-    } */
     h1{
         text-align: center;
     }
@@ -197,6 +189,7 @@ footer{
         width: 100%;
         height: 10%;
         transition: 1s;
+        /* animacja */
     }
     /* ustawienie hamburgera w formie graficznej */
     .burger div:nth-child(1){
@@ -214,9 +207,11 @@ footer{
     }
     #toggler:checked ~ .burger div:nth-child(2){
         opacity: 0;
+        /* przeźroczystość */
     }
     #toggler:checked ~ .burger div:nth-child(3){
         transform: rotate(-45deg);
+        /* obrót */
         top:45%
     }
 }
