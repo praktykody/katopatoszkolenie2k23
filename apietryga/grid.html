@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		.wrapper{
+			border:2px dashed red;
+			display:grid;
+			/* grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr; */
+			
+			grid-template-areas: 
+			"f4 f5 f6 ."
+			"f1 f8 f7 ."
+			"f2 f3 f7 f9"
+			;
+		}
+		.wrapper div{
+			border:2px dashed blue;
+		}
+		.wrapper div:nth-child(1) { grid-area: f1; }
+		.wrapper div:nth-child(2) { grid-area: f2; }
+		.wrapper div:nth-child(3) { grid-area: f3; }
+		.wrapper div:nth-child(4) { grid-area: f4; }
+		.wrapper div:nth-child(5) { grid-area: f5; }
+		.wrapper div:nth-child(6) { grid-area: f6; }
+		.wrapper div:nth-child(7) { grid-area: f7; }
+		.wrapper div:nth-child(8) { grid-area: f8; }
+		.wrapper div:nth-child(9) { grid-area: f9; }
+	</style>
+
+	<div class="wrapper">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+	</div>
+	
+</body>
+</html>

@@ -34,6 +34,10 @@ body > header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
 } 
 
 body > header #toggler,
@@ -68,9 +72,11 @@ h2{
     
 }
 main{
-    border: 15px dashed red;
+    /* border: 15px dashed red; */
     display: flex;
     max-width: 1920 px;
+    padding: 0 5rem;
+
 }
 
 main article table{
@@ -103,7 +109,7 @@ main article table td:nth-child(2){
 }
 
 main article{
-    border: 15px dashed blue;
+    /* border: 15px dashed blue; */
     flex: 1;
     padding: 0 2rem;
     display: flex;
@@ -121,7 +127,7 @@ main article img{
 }
 
 main section{
-    border: 15px dashed rgb(5, 218, 5);
+    /* border: 15px dashed rgb(5, 218, 5); */
     flex: 2;
     padding: 1rem 2rem;
 }
@@ -133,10 +139,10 @@ main section{
     }
     main{
         flex-direction: column;
+        padding: 0;
     }
 
     nav{
-        border: 5px dashed red;
         position: relative;
     }
     body > header ul{
@@ -166,5 +172,51 @@ main section{
 
     body > header label {
         display:flex;
+ 
     }
+
+.burger{
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+    position: relative;
+
+}
+
+.burger div{
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    transition: .5s;
+
+}
+
+.burger div:nth-child(2){
+    top: 10%;
+}
+
+.burger div:nth-child(2){
+    top: 40%;
+}
+.burger div:nth-child(3){
+    top: 70%;
+}
+
+#toggler:checked ~ .burger div:nth-child(1){
+    transform: rotate(45deg);
+    top: 40%;
+
+}
+
+#toggler:checked ~ .burger div:nth-child(2){
+    opacity: 0;
+}
+
+#toggler:checked ~ .burger div:nth-child(3){
+    transform: rotate(-45deg);
+    top: 40%;
+
+}
+
 }
