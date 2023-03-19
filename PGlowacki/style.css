@@ -55,7 +55,9 @@ body > header #toggler,
 body > header label{
     display: none;
 }
-    /* #Toggler */
+    #Toggler:checked ~ nav ul{
+        top: 100%;
+    }
 
 body > header label{
     display: flex;
@@ -126,5 +128,6 @@ main section header table tr:nth-child(1) .zipChild{
         flex-direction: column;
         position: absolute;
         right: 0;
+        top: -25rem;
     }
 }
