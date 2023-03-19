@@ -130,7 +130,7 @@ border: yellowgreen;
      display:flex;
     }
     .burger{
-        border:2px dashed red;
+        
         width: 2rem;
         height: 2rem;
         margin-right: .5rem;
