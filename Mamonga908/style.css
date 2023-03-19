@@ -34,6 +34,10 @@ body > header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
 } 
 
 body > header #toggler,
