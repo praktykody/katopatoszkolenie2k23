@@ -89,10 +89,10 @@ main article table td:nth-child(2){
    width: 100%
 }
 .zipParent{
-border: 2px solid pink;
+
 height: 1rem;
 position: relative;
-border: yellowgreen;
+
 }
 .zipChild{
   
