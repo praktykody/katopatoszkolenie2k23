@@ -52,6 +52,9 @@ body > header ul li a {
 	text-decoration: none;
 }
 
+h2{
+	margin:0;
+}
 main {
 	border:2px dashed red;
 	display:flex;
@@ -60,7 +63,7 @@ main {
 main article{
 	border:2px dashed blue;
 	flex:1;
-	padding:0 2rem;
+	padding:1rem 2rem;
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -68,7 +71,7 @@ main article{
 main article img {
 	border-radius: 15px;
 	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-	margin-bottom:1rem;
+	margin:1rem 0;
 }
 
 main article table {
@@ -94,21 +97,15 @@ main article table td:nth-child(2){
 	width:70%;
 }
 
-
 /* main article table tr:nth-child(1) .zipChild{
 	border:2px dashed red;
 } */
 
 
-
-
 main section{
 	border:2px dashed green;
 	flex:2;
+	padding: 1rem 2rem;
 }
 
-body{
-	border:10px dashed red;
-	min-height:100vh;
-}
 

@@ -12,7 +12,7 @@
 		*{ box-sizing: border-box }
 		html, body{ 
 			margin:0; 
-			height:100vh;
+			min-height:100vh;
 			position: relative;
 		}
 		nav{ 
@@ -50,7 +50,7 @@
 		}
 		iframe{
 			width:100%;
-			height:calc( 100vh - (var(--navheight) + 4px));
+			min-height:calc( 100vh - (var(--navheight) + 4px));
 			margin:0;
 		}
 		.toggler{
