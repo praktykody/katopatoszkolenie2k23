@@ -92,4 +92,7 @@ border: yellowgreen;
     main{
         flex-direction: column;
     }
+    nav{
+        border:5 dashed:rgba(240, 46, 170, 0.05)pink
+    }
 }
