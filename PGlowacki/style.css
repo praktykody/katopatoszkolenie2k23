@@ -30,7 +30,6 @@ h2{
     padding: 12px;
     color: black;
     margin: 0;
-    border: 5px dashed blue;
 }   
 body > header{
     display:flex;
@@ -49,6 +48,7 @@ body > header ul li {
     padding: .5rem;
     text-decoration: none;
     justify-content: flex-end;
+    font-size: .5rem;
 }
 body > header #toggler,
 body > header label{
@@ -56,7 +56,6 @@ body > header label{
 }
     #toggler:checked ~ ul {
         top: 100%;
-        border: 5px dashed red;
     }
 
 body > header label{
@@ -120,11 +119,9 @@ main section header table tr:nth-child(1) .zipChild{
         flex-direction: column;
     } 
     nav{
-        border: 4px dashed black;
         position: relative;
     }
     nav ul{
-        border: 4px dashed black;
         flex-direction: column;
         position: absolute;
         right: 0;

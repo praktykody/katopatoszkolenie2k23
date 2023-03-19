@@ -137,6 +137,7 @@ h2{
 
     nav{
         position: relative;
+
         
        
     }
@@ -146,8 +147,25 @@ h2{
         position: absolute;
         right: 0;
         background-color: gray;
+        top: -8rem;
+        transition: .5s;
+    }
+
+
+    #toggler:checked ~ ul{
+        top: 100%;
+
+    }
+
+
+    body > header label{
+        display: flex;
+        border: 10px dotted red;
+
     }
 }
+
+
 
 
 
