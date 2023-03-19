@@ -15,11 +15,15 @@ body{
 }
 /* > odniesienie do BEZPOŚREDNIEGO dziecka  */
 body > header{ 
+	align-items: center;
+	background: #fff;
 	display:flex;
 	justify-content: space-between;
-	align-items: center;
+	position:sticky;
 	text-decoration: none;
+	top:0;
 	width:100%;
+	z-index: 1;
 }
 
 body > header #toggler,
@@ -61,12 +65,13 @@ h2{
 	margin:0;
 }
 main {
-	border:2px dashed red;
+	padding:0 5rem;
+	/* border:2px dashed red; */
 	display:flex;
 	max-width: 1920px;
 }
 main article{
-	border:2px dashed blue;
+	/* border:2px dashed blue; */
 	flex:1;
 	padding:1rem 2rem;
 	display:flex;
@@ -103,7 +108,7 @@ main article table td:nth-child(2){
 }
 
 main section{
-	border:2px dashed green;
+	/* border:2px dashed green; */
 	flex:2;
 	padding: 1rem 2rem;
 }
@@ -113,11 +118,11 @@ main section{
 @media(max-width:768px){
 
 	main{
+		padding:0;
 		flex-direction: column;
 	}
 
 	nav{
-		border:5px dashed blue;
 		position: relative;
 	}
 
@@ -144,6 +149,44 @@ main section{
 
 	body > header label {
 		display:flex;
+	}
+
+	.burger{
+		/* border:2px dashed red; */
+		width: 2rem;
+		height: 2rem;
+		margin-right: .5rem;
+		position: relative;
+	}
+
+	.burger div{
+		background: #000;
+		position: absolute;
+		width: 100%;
+		height:10%;
+		transition: .5s;
+	}
+
+	.burger div:nth-child(1){
+		top:10%;
+	}
+	.burger div:nth-child(2){
+		top:40%;
+	}
+	.burger div:nth-child(3){
+		top:70%;
+	}
+
+	#toggler:checked ~ .burger div:nth-child(1){
+		transform: rotate(45deg);
+		top:40%;
+	}
+	#toggler:checked ~ .burger div:nth-child(2){
+		opacity:0;
+	}
+	#toggler:checked ~ .burger div:nth-child(3){
+		transform: rotate(-45deg);
+		top:40%;
 	}
 	
 }
