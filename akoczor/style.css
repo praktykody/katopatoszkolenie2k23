@@ -35,6 +35,12 @@ body > header{
     top: 0
     
 }
+body > header #toggler,
+body > header #label{
+   display: none;
+}
+
+
 
 body > header ul{
     display: flex;
@@ -120,6 +126,55 @@ h2{
     padding: 1rem;
 }
 
+/* Style ładowane tylko na mobile */
+@media(max-width: 768px){
+
+  
+
+    main{
+        flex-direction: column;
+    }
+
+    nav{
+        position: relative;
+
+        
+       
+    }
+
+    body > header ul{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: gray;
+        top: -10rem;
+        transition: .5s;
+        padding: 1rem 1rem .5rem 1rem;
+        
+    } 
+
+    
+
+
+
+
+    #toggler:checked ~ ul{
+        top: 100%;
+
+    }
+
+    body > header ul li{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    body > header label{
+        display: flex;
+        border: 10px dotted red;
+
+    }
+}
 
 
 

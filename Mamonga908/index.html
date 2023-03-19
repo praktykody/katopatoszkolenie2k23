@@ -15,7 +15,14 @@
         <h1>
             naglówek
         </h1>
+    
         <nav>
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
             <ul>
                 <li>
                     <a
@@ -36,6 +43,7 @@
                 </li>
             </ul>
         </nav>
+
     </header>
 
     
@@ -53,28 +61,37 @@
                 </div>
 
                 <table border="1">
-                    <tr>
-                        <td >Komórka1</td>
+                    <thead>
+                         <tr>
+                       
+                            <th>tecnologia</th>
+                            <th>doświadczenie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td >HTML</td>
 
-                        <td >                           
-                             <div class="zipParent">
-                                <div class="zipChild" style="width: 40%"> </div>
-                                <!-- <div class="zipChild"> </div> -->
-                            </div>
-                    </td>
+                            <td >                           
+                                <div class="zipParent">
+                                    <div class="zipChild" style="width: 40%"> </div>
+                                    <!-- <div class="zipChild"> </div> -->
+                                </div>
+                            </td>
+                            
 
-                    </tr>
-                    <tr>
-                        <td>Komórka3</td>
-                        <td>
-                            <div class="zipParent">
-                                <div class="zipChild" style="width: 70%"> </div>
-                                <!-- <div class="zipChild"> </div> -->
-                            </div>
-                    </td>
-                        
-                    </tr>
-
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>
+                                <div class="zipParent">
+                                    <div class="zipChild" style="width: 70%"> </div>
+                                    <!-- <div class="zipChild"> </div> -->
+                                </div>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
                 </table>   
 
         </article>
@@ -102,19 +119,10 @@
 
 
 
-    <div>
-        <h1>
-            napisz wiadomosść
-        </h1>
-    </div>
 
 
 
-    <form action="result.html" method="post|get">
-        <input type="text" name="winsmarwins" />
-        <input type="submit" />
-    </form>
-    <textarea rows="twoje imię" cols="treść"></textarea>
+
 
 
 </body>
