@@ -26,17 +26,16 @@ h3{
   text-align: center;
 }
 header{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhi5yJOLiPy_dZ_eWFVIIC3FYwkOVnEEC6_A&usqp=CAU");
   align-items: center;
-  padding: 1rem;
-  /* position: sticky; */
-  /* top: 0px; */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhi5yJOLiPy_dZ_eWFVIIC3FYwkOVnEEC6_A&usqp=CAU");
   border-bottom: 0.3rem solid beige;
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 img{
   margin: 3% 3% 0% 3%;
@@ -132,6 +131,7 @@ thead tr:nth-child(2){
   position: relative;
   background-color: beige;
   border: 2px solid black;
+
 }
 .zipChild{
   position: absolute;
@@ -145,6 +145,18 @@ thead tr:nth-child(2){
   #toggler:checked ~ ul {
     right:0%
   }
+  #toggler:checked ~ .burger div:nth-child(1){
+    transform: rotate(45deg);
+    top: 30%;
+  }
+  #toggler:checked ~ .burger div:nth-child(3){
+    transform: rotate(-45deg);
+    top: 30%
+  }
+  #toggler:checked ~ .burger div:nth-child(2){
+    opacity: 0;
+  }
+
   body > header label{
       display: flex;
       color: beige;
@@ -167,14 +179,37 @@ thead tr:nth-child(2){
     }
     nav ul{
       flex-direction: column;
-      position: absolute;
-      right: 0;
+      position: fixed;
+      top: 3rem;
       right: -10rem;
       transition: .5s;
     }
     nav ul li a{
       justify-content: start;
     }
-   
+   h1{
+    font-size: 1.5rem;
+   }
+   .burger{
+    width: 1.5rem;
+    height:1.5rem;
+    margin-right: .5rem;
+    color: beige;
+    position: relative;
+
+   }
+   .burger div{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: beige;
+    transition: 0.5s;
+   }
+   .burger div:nth-child(2){
+    top: 30%;
+   }
+   .burger div:nth-child(3){
+    top: 60%;
+   }
     
 }

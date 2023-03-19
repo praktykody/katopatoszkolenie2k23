@@ -6,7 +6,7 @@ img{max-width: 100%;
 }
 
 body{
-    border: 2px dashed green;
+
     font-family: "oswald";
     background-color: rgba(112, 112, 112, 0.525);
     font-size: 1rem;
@@ -45,6 +45,8 @@ body{
     border: 2px solid #000;
     border-radius: 10px;
     text-align: center;
+    /* Solid - linie ciagła
+       dashed - linie przerywana */
 
 }
 /*ustawienie skali w ccs patrz ścieżka scale w html */
@@ -59,12 +61,12 @@ table td:nth-child(2) .scale{
 }
   
 h1{
-    border: 2px solid blue;
     margin: .5rem;
+    
 }
 
 h2{
-    padding: 12px;
+    padding: 1rem;
     display:inline-flex;
     margin: 0;
 }
@@ -74,7 +76,6 @@ main{
     
 }
 main article{
-    border: 2px solid red;
     flex:1;
     padding:0 .5rem;
     max-width: 1920px;
@@ -84,7 +85,6 @@ main article{
 
 }
 main section{
-    border: 2px solid black;
     flex:2;
     padding: 1rem 2rem; 
     
@@ -132,21 +132,88 @@ main article table tr:nth-child(3) .zipChild{
 /* style na urządzeniach mobilnych*/
 
 @media(max-width:768px){
-    body{
-        border: 2px solid orange;
-    }
+    /* określenie wielkości do jakiej wielkości maja się napisywać wszystkie zależności */
+
+
     main{
         flex-direction: column;
     }
     nav{
-        border: 2px solid rgb(255, 255, 255);
         position: relative;
     }
     /* przesunięcie menu poza nav i przesunięcie do prawej */
+    /* ukrywanie menu  */
     nav ul{
-        border: 2px solid black;
+        background: rgb(205,197,197);
+        background: linear-gradient(90deg, rgba(205,197,197,1) 0%, rgba(53,60,52,0.46551120448179273) 83%);         
+        border-radius: 10px;
         flex-direction: column;
         position: absolute;
         right: 0;
+        top: -20rem;
+        transition: 1s;
+        /* trasision - opcja do prostych animacji w CSS */
+        padding: 1rem 1rem15rem 1rem;
+    }
+    
+    body > header{
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+    }
+
+    body > header ul li a,
+    body > header ul li{
+               margin: 0;
+        padding-bottom: 0rem;
+        padding: .5rem;
+    }
+    #toggler:checked ~ ul{
+        top:100%;
+    }
+    
+    body > header label{
+        display: flex;
+    }
+    /* body> header #toggler{
+        display:flex;
+    } */
+    h1{
+        text-align: center;
+    }
+    .burger{
+        /* border: 2px solid rgb(1, 1, 1); */
+        width: 2rem;
+        height: 2rem;
+        margin-right: .5rem;
+        position: relative;
+    }
+    .burger div{
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        transition: 1s;
+    }
+    /* ustawienie hamburgera w formie graficznej */
+    .burger div:nth-child(1){
+        top: 10%;
+        }
+    .burger div:nth-child(2){
+        top: 40%;
+    }   
+    .burger div:nth-child(3){
+        top: 70%;
+    }   
+    #toggler:checked ~ .burger div:nth-child(1){
+        transform: rotate(45deg);
+        top:40%
+    }
+    #toggler:checked ~ .burger div:nth-child(2){
+        opacity: 0;
+    }
+    #toggler:checked ~ .burger div:nth-child(3){
+        transform: rotate(-45deg);
+        top:45%
     }
 }
