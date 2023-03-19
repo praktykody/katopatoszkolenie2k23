@@ -4,7 +4,7 @@
 }
 
 img{
-    max-width: 100%;
+    max-width: 100%;;
 }
 body{
     background-color: blanchedalmond;
@@ -12,8 +12,10 @@ body{
     font-family: 'Roboto Mono', monospace;
     background-image: url("https://c.pxhere.com/images/0e/3b/2f82fcd6dbbdf2f7126a14ed4dad-1672622.jpg!s2");
     display: flex;
+    background-size: cover;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 .first{
     color: blue;
@@ -27,19 +29,27 @@ h1{
 }
 h2{
     padding: 12px;
-    color: black;
+    color: blue;
+    margin: 0;
 }   
+
 body > header{
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%
+    width: 100%;
+    position: sticky;
+    top:0;
+    text-decoration: none;
+    z-index: 1;
 }
+
 body > header ul {
     display: flex;
     padding: 0;
     align-items: flex-start;
 }
+
 body > header ul li {
     list-style:none;
     margin: .5rem;
@@ -47,6 +57,15 @@ body > header ul li {
     text-decoration: none;
     justify-content: flex-end;
 }
+
+body > header #toggler,
+body > header label{
+    display: none;
+}
+    
+
+
+
 table {
     background-color: aqua;
 }
@@ -57,7 +76,7 @@ main {
 }
 main article{
     flex: 2;
-    padding: 0.2rem;
+    padding: 1rem 2rem
 }
 main section img {
     border: 10px dashed rgba(78, 48, 24, 0.923);
@@ -68,6 +87,8 @@ main section header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 2rem;
+
 }
 main section {
     flex: 1;
@@ -77,6 +98,8 @@ main section header table td:nth-child(2){
 }
 main section header table{
     width: 100%;
+
+
 }
 
 .zipParent{
@@ -94,4 +117,70 @@ main section header table{
 }
 main section header table tr:nth-child(1) .zipChild{
     width: 60%;
+}
+
+@media(max-width:768px){
+    main{
+        flex-direction: column;
+    } 
+    nav{
+        position: relative;
+    }
+    body > header ul{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: -25rem;
+        transition: 1s;
+        background-color: lightgreen;
+        border: 5px solid black;
+    }
+    
+
+    body > header ul li a,
+    body > header ul li{
+        margin: 0;
+        margin-bottom: .25rem;
+        padding: 0;
+    }
+
+    #toggler:checked ~ ul {
+        top: 100%;
+    }
+    body > header label{
+        display: flex;
+    }
+
+    .burger{
+        width: 2rem;
+        height: 2rem;
+        margin-right: .5rem;
+        position: relative;
+    }
+
+    .burger div{
+        position: absolute;
+        width: 100%;
+        background-color: black;
+        height: 20%;
+        transition: 1s;
+
+    }
+
+    .burger div:nth-child(2){
+        top: 40%;
+    }
+    .burger div:nth-child(3){
+        top: 80%;
+    }
+
+    #toggler:checked ~ .burger div:nth-child(1){
+        transform: rotate(45deg);
+        top: 40%;
+    }
+
+    #toggler:checked ~ .burger div:nth-child(3){
+        transform: rotate(-45deg);
+        top: 40%;
+    }
 }

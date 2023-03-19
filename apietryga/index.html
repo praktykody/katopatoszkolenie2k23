@@ -17,6 +17,12 @@
       Nagłówek
     </h1>
     <nav>
+      <input type="checkbox" id="toggler">
+      <label for="toggler" class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
       <ul>
         <li>
           <a href="https://github.com/apietryga" target="_blank" > 
@@ -39,7 +45,6 @@
       </ul>
     </nav>
   </header>
-  
   <main>
     <article>
       <header>
@@ -52,26 +57,35 @@
       <img src="https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_1280.png" 
         alt="Personal photo">
   
-      <table border="1">
-        <tr>
-          <td>HTML</td>
-          <td>
-            <div class="zipParent">
-              <div class="zipChild" style="width:50%"></div>
-              <!-- <div class="zipChild"></div> -->
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td>
-            <div class="zipParent">
-              <div class="zipChild" style="width:90%"></div>
-              <!-- <div class="zipChild"></div> -->
-            </div>
-          </td>
-        </tr>
+      <table>
+        <thead>
+          <tr>
+            <th>Technologia</th>
+            <th>Doświadczenie</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>
+              <div class="zipParent">
+                <div class="zipChild" style="width:50%"></div>
+                <!-- <div class="zipChild"></div> -->
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>
+              <div class="zipParent">
+                <div class="zipChild" style="width:90%"></div>
+                <!-- <div class="zipChild"></div> -->
+              </div>
+            </td>
+          </tr>
+        </tbody>
       </table>
+
     </article>
     <section>
       <header>
@@ -88,15 +102,6 @@
       
     </section>
   </main>
-
-  <div>
-    <form action="#">
-      <input type="text">
-      <textarea rows="10"></textarea>
-      <input type="submit" value="Wyślij">
-    
-    </form>
-  </div>
 
   <footer>Stopka</footer>
 </body>
