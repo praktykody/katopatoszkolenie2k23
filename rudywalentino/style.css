@@ -88,10 +88,7 @@ border: yellowgreen;
     width: 50%;
     background: gray;
 }
-@media(max-width:768px){
-    body{
-        border: blue;
-    }
+@media(max-width:768px){    
     main{
         flex-direction: column;
     }
