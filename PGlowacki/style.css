@@ -1,10 +1,11 @@
 
+
 *{
     box-sizing: border-box;
 }
 
 img{
-    max-width: 100%;
+    max-width: 100%;;
 }
 body{
     background-color: blanchedalmond;
@@ -29,6 +30,8 @@ h1{
 h2{
     padding: 12px;
     color: black;
+    margin: 0;
+    border: 5px dashed blue;
 }   
 body > header{
     display:flex;
@@ -58,7 +61,7 @@ main {
 }
 main article{
     flex: 2;
-    padding: 0.2rem;
+    padding: 1rem 2rem
 }
 main section img {
     border: 10px dashed rgba(78, 48, 24, 0.923);
@@ -69,6 +72,8 @@ main section header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 2rem;
+    border: 5px dashed black;
 }
 main section {
     flex: 1;
@@ -78,6 +83,8 @@ main section header table td:nth-child(2){
 }
 main section header table{
     width: 100%;
+
+    border: 10px dashed red;
 }
 
 .zipParent{
@@ -95,4 +102,18 @@ main section header table{
 }
 main section header table tr:nth-child(1) .zipChild{
     width: 60%;
+}
+TYLKO NA MOBILE STYLE
+
+@media(max-width:768px){
+    main{
+        flex-direction: column;
+    } 
+    header nav{
+        border: 5px dashed green;
+    }
+    header nav ul{
+        border: 5px dashed black;
+        flex-direction: column;
+    }
 }
