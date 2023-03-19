@@ -30,11 +30,26 @@ justify-content: center;
 {
     color:yellow;
 }
+
+
+
+body >header #toggler,
+body>header label{
+    display :none;
+}
+
+
 body > header{
     border:2px solid tomato;
     display:flex; 
     justify-content: space-between;
     align-items: center;
+    width:100%;
+    position:sticky;
+    top:0;
+    width:100%;
+    background: blue;
+    z-index: 1;
 
 }
 
@@ -85,13 +100,15 @@ main article img{
 }
 
 main section{
-    border:5px dashed black
+    border:5px dashed black;
+    padding: 1rem 2rem;
     
     }
 
     main article table{
 
         width: 100%;
+        margin-bottom: .83em;
 
     }
     main article table td:nth-child(2){
@@ -117,4 +134,108 @@ main section{
 
 
     }
+
+
+
+
+
+
+    /* widok na telefonie , 
+    jezeli rozdzielczosc bedzie mniejsza niz 768
+    nadpiszemy style*/
+    @media(max-width:768px){
+      
+
+main {
+    flex-direction: column;
+}
+
+/* HAMBURGER */
+nav{
+    border: 5px dashed yellow;
+    position: relative;
+}
+
+
+
+    body>header ul{
+        background:#eee;
+border:5px dashed blue;
+flex-direction: column;
+position:absolute;
+right: 0;
+top:-12rem ;
+transition: .5s;
+padding:1rem 1rem .5rem 1rem;
+
+}
+
+/* nav ul li{ */
+    body>header ul li a,
+    body>header ul li{
+    border: 2px dashed rebeccapurple;
+    margin:0;
+    padding:0;
+    margin-bottom:.25rem;
+}
+
+#toggler:checked ~ ul{
+
+    top:100%;
+}
+
+
+body >header label{
+    display:flex;
+}
+
+.burger {
+
+width:3rem;
+height: 2rem;
+margin-right: .5rem;
+position:relative;
+
+}
+
+.burger div{
     
+    position :absolute;
+    width:100%;
+    background: black;
+    height: 5px;
+    transition:  .5s;
+
+}
+
+.burger div:nth-child(1){
+top:10%;
+}
+.burger div:nth-child(2){
+    top:40%;
+    
+    }    
+    .burger div:nth-child(3){
+        top:70%;
+            
+        }
+
+#toggler:checked ~ .burger div:nth-child(1)
+{
+transform:rotate(45deg);
+top:40%;
+}
+
+#toggler:checked ~ .burger div:nth-child(2)
+{
+opacity: 0;
+}
+
+#toggler:checked ~ .burger div:nth-child(3)
+{
+    transform:rotate(-45deg);
+    top:40%;
+}
+
+
+}
