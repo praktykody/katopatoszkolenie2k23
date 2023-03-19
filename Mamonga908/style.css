@@ -36,6 +36,12 @@ body > header{
     width: 100%;
 } 
 
+body > header #toggler,
+body > header label {
+    display:none;
+}
+
+
 body > header ul{
    
     display:flex;
@@ -137,5 +143,19 @@ main section{
         border: 5px dashed blue;
         flex-direction: column;
         position: absolute;
+        right:0;
+        top:-12rem;
+        transition: .5s;
+
+
+    }
+
+    #toggler:checked ~ ul{
+        top: 100%;
+    }
+ 
+
+    body > header label {
+        display:flex;
     }
 }
