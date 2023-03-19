@@ -55,6 +55,11 @@ body > header #toggler,
 body > header label{
     display: none;
 }
+    /* #Toggler */
+
+body > header label{
+    display: flex;
+}
 table {
     background-color: aqua;
 }
@@ -113,11 +118,11 @@ main section header table tr:nth-child(1) .zipChild{
         flex-direction: column;
     } 
     nav{
-
+        border: 4px dashed black;
         position: relative;
     }
     nav ul{
-
+        border: 4px dashed black;
         flex-direction: column;
         position: absolute;
         right: 0;
