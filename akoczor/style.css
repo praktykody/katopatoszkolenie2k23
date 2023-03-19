@@ -35,6 +35,12 @@ body > header{
     top: 0
     
 }
+body > header #toggler,
+body > header #label{
+   display: none;
+}
+
+
 
 body > header ul{
     display: flex;
@@ -120,6 +126,44 @@ h2{
     padding: 1rem;
 }
 
+/* Style ładowane tylko na mobile */
+@media(max-width: 768px){
+
+  
+
+    main{
+        flex-direction: column;
+    }
+
+    nav{
+        position: relative;
+
+        
+       
+    }
+
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: gray;
+        top: -8rem;
+        transition: .5s;
+    }
+
+
+    #toggler:checked ~ ul{
+        top: 100%;
+
+    }
+
+
+    body > header label{
+        display: flex;
+        border: 10px dotted red;
+
+    }
+}
 
 
 

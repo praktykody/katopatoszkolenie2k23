@@ -6,6 +6,7 @@ img{max-width: 100%;
 }
 
 body{
+    border: 2px dashed green;
     font-family: "oswald";
     background-color: rgba(112, 112, 112, 0.525);
     font-size: 1rem;
@@ -13,6 +14,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
+    min-width: 100vh;
     }
 
    body > header{
@@ -22,26 +24,32 @@ body{
     width: 100%;
    }
    
- 
+    body header #toggler, 
+    body header label  /* warunek dotyczączy konketnych elementów w kodzie html*/
+{   display: none; /* ukrycie obiektu na strobnie wizualnej a widoczne w kodzie */
+
+}
    body > header ul{
     display: flex;
     padding: 0;
    }
 
    body > header li{
-    list-style: none;
+    list-style: none;  
+    /* ukrycie wypunktowań listy */
     margin: 0 .5rem;
     padding: 0 .5rem;
     }
 
-table{
+    table{
     border: 2px solid #000;
     border-radius: 10px;
+    text-align: center;
 
 }
 /*ustawienie skali w ccs patrz ścieżka scale w html */
    table td:nth-child(2) {   
-   min-width:200px;
+   min-width:100px;
 }
 
 table td:nth-child(2) .scale{ 
@@ -51,12 +59,14 @@ table td:nth-child(2) .scale{
 }
   
 h1{
+    border: 2px solid blue;
     margin: .5rem;
 }
 
 h2{
     padding: 12px;
-    display:inline-flex
+    display:inline-flex;
+    margin: 0;
 }
 
 main{
@@ -64,6 +74,7 @@ main{
     
 }
 main article{
+    border: 2px solid red;
     flex:1;
     padding:0 .5rem;
     max-width: 1920px;
@@ -73,18 +84,21 @@ main article{
 
 }
 main section{
+    border: 2px solid black;
     flex:2;
-    padding: 0 .5rem; 
+    padding: 1rem 2rem; 
+    
 }
 
 main article img{
     border-radius: 25%;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.25) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 /*tworzenie suwakow*/
 main article table{
     width: 100%;
+   
 }
 
 main article table td:nth-child(1){
@@ -99,7 +113,7 @@ main article table td:nth-child(1){
 }
 .zipChild{
     border-radius: 2px;
-    background-color: rgb(119, 255, 0);
+    background-color: rgb(77, 121, 39);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -114,3 +128,25 @@ main article table tr:nth-child(3) .zipChild{
     width: 76%;
 }   
 /* tworzenie suwaków*/
+
+/* style na urządzeniach mobilnych*/
+
+@media(max-width:768px){
+    body{
+        border: 2px solid orange;
+    }
+    main{
+        flex-direction: column;
+    }
+    nav{
+        border: 2px solid rgb(255, 255, 255);
+        position: relative;
+    }
+    /* przesunięcie menu poza nav i przesunięcie do prawej */
+    nav ul{
+        border: 2px solid black;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+    }
+}
