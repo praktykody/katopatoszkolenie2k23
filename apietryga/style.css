@@ -117,26 +117,70 @@ main section{
 	}
 
 	nav{
-		border:5px dashed blue;
 		position: relative;
 	}
 
-	nav ul {
-		border:5px dashed red;
+	body > header ul {
+		background: #eee;
 		flex-direction: column;
 		position: absolute;
 		right:0;
-		top:-8rem;
+		top:-15rem;
 		transition: .5s;
+		padding:1rem 1rem .5rem 1rem;
 	}
 
+	body > header ul li a,
+	body > header ul li{
+		margin:0;
+		margin-bottom:.25rem;
+		padding:0;
+	}
+	
 	#toggler:checked ~ ul {
-		border:2px dashed red;
 		top:100%;
 	}
 
 	body > header label {
 		display:flex;
+	}
+
+	.burger{
+		/* border:2px dashed red; */
+		width: 2rem;
+		height: 2rem;
+		margin-right: .5rem;
+		position: relative;
+	}
+
+	.burger div{
+		background: #000;
+		position: absolute;
+		width: 100%;
+		height:10%;
+		transition: .5s;
+	}
+
+	.burger div:nth-child(1){
+		top:10%;
+	}
+	.burger div:nth-child(2){
+		top:40%;
+	}
+	.burger div:nth-child(3){
+		top:70%;
+	}
+
+	#toggler:checked ~ .burger div:nth-child(1){
+		transform: rotate(45deg);
+		top:40%;
+	}
+	#toggler:checked ~ .burger div:nth-child(2){
+		opacity:0;
+	}
+	#toggler:checked ~ .burger div:nth-child(3){
+		transform: rotate(-45deg);
+		top:40%;
 	}
 	
 }
