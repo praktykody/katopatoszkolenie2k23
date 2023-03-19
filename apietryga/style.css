@@ -15,11 +15,15 @@ body{
 }
 /* > odniesienie do BEZPOŚREDNIEGO dziecka  */
 body > header{ 
+	align-items: center;
+	background: #fff;
 	display:flex;
 	justify-content: space-between;
-	align-items: center;
+	position:sticky;
 	text-decoration: none;
+	top:0;
 	width:100%;
+	z-index: 1;
 }
 
 body > header #toggler,

@@ -45,6 +45,11 @@ body > header{
     justify-content: space-between;
     align-items: center;
     width:100%;
+    position:sticky;
+    top:0;
+    width:100%;
+    background: blue;
+    z-index: 1;
 
 }
 
@@ -183,4 +188,54 @@ padding:1rem 1rem .5rem 1rem;
 body >header label{
     display:flex;
 }
-    }
+
+.burger {
+
+width:3rem;
+height: 2rem;
+margin-right: .5rem;
+position:relative;
+
+}
+
+.burger div{
+    
+    position :absolute;
+    width:100%;
+    background: black;
+    height: 5px;
+    transition:  .5s;
+
+}
+
+.burger div:nth-child(1){
+top:10%;
+}
+.burger div:nth-child(2){
+    top:40%;
+    
+    }    
+    .burger div:nth-child(3){
+        top:70%;
+            
+        }
+
+#toggler:checked ~ .burger div:nth-child(1)
+{
+transform:rotate(45deg);
+top:40%;
+}
+
+#toggler:checked ~ .burger div:nth-child(2)
+{
+opacity: 0;
+}
+
+#toggler:checked ~ .burger div:nth-child(3)
+{
+    transform:rotate(-45deg);
+    top:40%;
+}
+
+
+}
