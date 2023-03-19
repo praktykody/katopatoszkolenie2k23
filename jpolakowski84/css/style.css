@@ -132,6 +132,7 @@ main article table tr:nth-child(3) .zipChild{
 /* style na urządzeniach mobilnych*/
 
 @media(max-width:768px){
+    /* określenie wielkości do jakiej wielkości maja się napisywać wszystkie zależności */
     body{
         border: 2px solid orange;
     }
@@ -143,10 +144,33 @@ main article table tr:nth-child(3) .zipChild{
         position: relative;
     }
     /* przesunięcie menu poza nav i przesunięcie do prawej */
+    /* ukrywanie menu  */
     nav ul{
-        border: 2px solid black;
+        border: 2px solid rgb(148, 53, 53);
         flex-direction: column;
         position: absolute;
         right: 0;
+        top: -11rem;
+        transition: 1s;
+        /* trasision - opcja do prostych animacji w CSS */
     }
+    body > header{
+        padding: 1rem;
+    }
+       
+    }
+    body > header ul li{
+        margin: 0;
+        padding: 0;
+    }
+    #toggler:checked ~ ul{
+        top:100%;
+    }
+    
+    body > header label{
+        display: flex;
+    }
+    /* body> header #toggler{
+        display:flex;
+    } */
 }
