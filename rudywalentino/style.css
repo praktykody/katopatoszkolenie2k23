@@ -22,16 +22,22 @@ ul{
 }
 .first{
     color: brown;
-}
+} 
+
 body header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+body> header #toggler, 
+body> header label{
+    display: none;
+}
 body header ul{
     display: flex;
     padding: 0;
-    font-size: 40px
+    font-size: 40px;
+    text-decoration: none;
 }
 body header ul li{
     list-style:none;
@@ -93,8 +99,7 @@ border: yellowgreen;
         flex-direction: column;
     }
     nav{
-        border:5px dashed pink;
-        flex-direction: column;
+        border:5px dashed pink;       
         position: relative;
     }
     nav ul{
@@ -102,6 +107,16 @@ border: yellowgreen;
         flex-direction: column;
         position: absolute;
         right: 0;
+        top: 8rem;
+        transition: .5s;
+    }
 
+    #toggler:checked ~ ul{
+        border: 2px dashed red;
+        top: 100%;
+    }
+
+     body> header label{
+     display:flex
     }
 }
