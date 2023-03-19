@@ -51,6 +51,10 @@ body > header ul li {
     text-decoration: none;
     justify-content: flex-end;
 }
+body > header #toggler,
+body > header label{
+    display: none;
+}
 table {
     background-color: aqua;
 }
@@ -103,17 +107,19 @@ main section header table{
 main section header table tr:nth-child(1) .zipChild{
     width: 60%;
 }
-TYLKO NA MOBILE STYLE
 
 @media(max-width:768px){
     main{
         flex-direction: column;
     } 
-    header nav{
+    nav{
         border: 5px dashed green;
+        position: relative;
     }
-    header nav ul{
+    nav ul{
         border: 5px dashed black;
         flex-direction: column;
+        position: absolute;
+        right: 0;
     }
 }
