@@ -109,7 +109,7 @@ border: yellowgreen;
         right: 0;
     }
 
-    #toggler:checked ~ nav ul{
+    #toggler:checked ~ ul{
         top: 100%;
     }
 
