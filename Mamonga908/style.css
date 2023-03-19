@@ -135,7 +135,7 @@ main section{
 /* stuli tolko na telefon */
 @media(max-width: 768px){
     body{
-        border: 12px dashed green;
+        /* border: 12px dashed green; */
     }
     main{
         flex-direction: column;
