@@ -139,17 +139,26 @@ main section{
         border: 5px dashed red;
         position: relative;
     }
-    nav ul{
-        border: 5px dashed blue;
+    body > header ul{
+        border: 5px dashed rgb(8, 8, 255);
+        background: rgb(77, 192, 245);
         flex-direction: column;
         position: absolute;
         right:0;
-        top:-12rem;
-        transition: .5s;
-
+        top: -55rem;
+        transition: 2s;
+        padding: 1rem 1rem .5rem 1rem;
 
     }
 
+    
+    body > header ul li a,
+    body > header ul li{
+        margin: 0;
+        margin-bottom: .5rem;
+        padding: 0;
+
+    }
     #toggler:checked ~ ul{
         top: 100%;
     }
