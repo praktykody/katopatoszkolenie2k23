@@ -125,7 +125,7 @@ main section header table tr:nth-child(1) .zipChild{
         transition: 1s;
         background-color: lightgreen;
     }
-    }
+    
 
     body > header ul li a,
     body > header ul li{
@@ -140,5 +140,12 @@ main section header table tr:nth-child(1) .zipChild{
     body > header label{
         display: flex;
     }
-    /*Wysunięcie tabelki i jej stworzenie */
+
+    .burger{
+        border: 2px dashed red;
+        width: 2rem;
+        height: 2rem;
+        margin-right: .5rem;
+        
+    }
 }
