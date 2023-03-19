@@ -152,4 +152,7 @@ border: yellowgreen;
     .burger div:nth-child(3){
         top: 70%;
     }
+    #toggler:checked ~ .burger div:nth-child(1){
+        
+    }
 }
