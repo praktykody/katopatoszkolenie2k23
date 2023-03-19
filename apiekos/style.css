@@ -22,7 +22,7 @@ h1{
     color: white;
     font-size: 30px;
     margin: .5rem;
-    font-family: 'Times New Roman';
+    font-family: 'Gruppo', cursive;
 }
 /* Odniesienie do bezpośredniego dziecka */
 body > header{
