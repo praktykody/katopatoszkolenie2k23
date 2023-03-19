@@ -116,7 +116,7 @@ border: yellowgreen;
         top: 100%;
     }
 
-     body> header label{
-     display:flex
+     body > header label{
+     display:flex;
     }
 }
