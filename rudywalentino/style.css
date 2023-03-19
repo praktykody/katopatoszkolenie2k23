@@ -57,13 +57,13 @@ body header ul li a{
     text-decoration: none;
 }
 main{
-    border: 10px dashed red;
+    
     display: flex;
     max-width: 1920;
     padding: 0 .5rem;
     }
 main article{
-    border: 10px dashed blue;
+ 
     flex: 1;
     padding:1rem 2rem;
     display: flex;
@@ -71,13 +71,13 @@ main article{
     align-items: center;
 }
 main article img{
-    border: 10px dashed green;
+   
     border-radius: 50%;    
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
     margin: 1rem 0 
 }
 main section{
-    border: 10px dashed green;
+   
     flex: 2;
     padding: 1rem 2rem
 }
@@ -85,17 +85,17 @@ main article table{
     width: 100%;     
 }
 main article table td:nth-child(2){
-   border: 2px dashed green;
+   
    width: 100%
 }
 .zipParent{
-border: 2px solid pink;
+
 height: 1rem;
 position: relative;
-border: yellowgreen;
+
 }
 .zipChild{
-    border: 2px dashed purple;
+  
     position:absolute;
     height: 100%;
     width: 50%;
@@ -130,7 +130,7 @@ border: yellowgreen;
      display:flex;
     }
     .burger{
-        border:2px dashed red;
+        
         width: 2rem;
         height: 2rem;
         margin-right: .5rem;
