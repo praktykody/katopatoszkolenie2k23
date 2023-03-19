@@ -129,4 +129,27 @@ border: yellowgreen;
      body > header label{
      display:flex;
     }
+    .burger{
+        border:2px dashed red;
+        width: 2rem;
+        height: 2rem;
+        margin-right: .5rem;
+        position: relative;
+    }
+    .burger div{
+        background: #000;
+        position: absolute;
+        width: 100%;
+        height: 10%;    
+    }
+    .burger div:nth-child(1){
+        top:10%;
+
+    }
+    .burger div:nth-child(2){
+        top: 40%;
+    }
+    .burger div:nth-child(3){
+        top: 70%;
+    }
 }
