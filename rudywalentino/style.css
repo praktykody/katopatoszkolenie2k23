@@ -46,7 +46,7 @@ body header ul li a{
 }
 main{
     border: 10px dashed red;
-    display: flex;    
+    display: flex;
     max-width: 1920;
     }
 main article{
@@ -87,4 +87,12 @@ border: yellowgreen;
     height: 100%;
     width: 50%;
     background: gray;
+}
+@media(max-width:768px){
+    body{
+        border: blue;
+    }
+    main{
+        flex-direction: column;
+    }
 }
