@@ -92,4 +92,7 @@ border: yellowgreen;
     body{
         border: blue;
     }
+    main{
+        flex-direction: column;
+    }
 }
