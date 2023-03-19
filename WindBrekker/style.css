@@ -8,6 +8,9 @@ body{
     background: linear-gradient(0deg, rgb(209, 224, 142) 0%,rgb(255, 255, 255) 100%);
     /* background-image: url("https://e7.pngegg.com/pngimages/961/674/png-clipart-footage-leaf-green-video-leaf-white-leaf.png"); */
 }
+footer{
+  text-align: center;
+}
 h1{
     color:rgb(237, 247, 192);
     text-align: center;
@@ -25,8 +28,8 @@ header{
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhi5yJOLiPy_dZ_eWFVIIC3FYwkOVnEEC6_A&usqp=CAU");
   align-items: center;
   padding: 1rem;
-  position: sticky;
-  top: 0px;
+  /* position: sticky; */
+  /* top: 0px; */
   border-bottom: 0.3rem solid beige;
 
 
