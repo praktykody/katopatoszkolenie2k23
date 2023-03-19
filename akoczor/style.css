@@ -32,7 +32,8 @@ body > header{
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     width: 100%;
     position: sticky;
-    top: 0
+    top: 0;
+    z-index: 1;
     
 }
 body > header #toggler,

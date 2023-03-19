@@ -12,6 +12,7 @@ body{
     font-family: 'Roboto Mono', monospace;
     background-image: url("https://c.pxhere.com/images/0e/3b/2f82fcd6dbbdf2f7126a14ed4dad-1672622.jpg!s2");
     display: flex;
+    background-size: cover;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
@@ -28,20 +29,27 @@ h1{
 }
 h2{
     padding: 12px;
-    color: black;
+    color: blue;
     margin: 0;
 }   
+
 body > header{
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%
+    width: 100%;
+    position: sticky;
+    top:0;
+    text-decoration: none;
+    z-index: 1;
 }
+
 body > header ul {
     display: flex;
     padding: 0;
     align-items: flex-start;
 }
+
 body > header ul li {
     list-style:none;
     margin: .5rem;
@@ -49,6 +57,7 @@ body > header ul li {
     text-decoration: none;
     justify-content: flex-end;
 }
+
 body > header #toggler,
 body > header label{
     display: none;
@@ -174,7 +183,4 @@ main section header table tr:nth-child(1) .zipChild{
         transform: rotate(-45deg);
         top: 40%;
     }
-
-
-
 }
