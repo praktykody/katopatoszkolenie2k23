@@ -16,7 +16,10 @@
         <h1>
             MOJA STRONA
         </h1>
-        <nav>
+            <nav>
+                <!-- Wstawianie CHECKBOXA-->
+                <input type="checkbox" id="toggler"></imput>
+                <label for="toggler">toggler</label>
                 <ul>
                     <li>
                         <a 
@@ -55,10 +58,18 @@
                 <h2>
                 Moja skromna persona
                 </h2>
+        <table>
             </header>
             
             <img src="images/avatar.png" alt="profilowe" width="200" > 
-            Doświadczenie
+            <thead>
+                <tr>
+                <th>Technologie</th>
+                <th>Doświadczenie</th>
+            </tr>
+
+            </thead>
+           
             <!--<table>
                 <tr>
                    <td>HTML</td>
@@ -80,8 +91,8 @@
                </tr>
             </table>-->
             <!-- tabela z suwakami-->
-            
-            <table>
+            <tbody>
+
                 <td>HTML</td>
                     <td>
                         <div class="zipParent">
@@ -107,6 +118,8 @@
                     </td>
             </tr>
            </table>
+        </tbody>
+
         </article>
         
         <section>
@@ -126,18 +139,6 @@
         </section>
     </main>
     
-    <div>
-        <form acrtion="#">
-            <input type="text">
-                 <textrea rows="10"></textrea>
-                 <input type="submit"  value="wyslij">
-                 <form action="#">
-                 <textarea rows="10">Tutaj wpisz komentarz...</textarea>
-    
-
-        </form>
-    </div>
-        
     <footer>COPYRIGHTS BY JACK</footer>
 </body>
 </html>

@@ -9,25 +9,35 @@ body{
     background-color: aqua;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 h1{
     margin: .5rem;
+}
+h2{
+    margin: 0;
 }
 ul{
     font-size: 30px
 }
 .first{
     color: brown;
-}
+} 
+
 body header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+body> header #toggler, 
+body> header label{
+    display: none;
+}
 body header ul{
     display: flex;
     padding: 0;
-    font-size: 40px
+    font-size: 40px;
+    text-decoration: none;
 }
 body header ul li{
     list-style:none;
@@ -42,13 +52,13 @@ body header ul li a{
 }
 main{
     border: 10px dashed red;
-    display: flex;    
+    display: flex;
     max-width: 1920;
     }
 main article{
     border: 10px dashed blue;
     flex: 1;
-    padding:0 2rem;
+    padding:1rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,14 +67,15 @@ main article img{
     border: 10px dashed green;
     border-radius: 50%;    
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-    margin-bottom: 1rem;
+    margin: 1rem 0 
 }
 main section{
     border: 10px dashed green;
-    flex: 2
+    flex: 2;
+    padding: 1rem 2rem
 }
 main article table{
-    width: 100%;    
+    width: 100%;     
 }
 main article table td:nth-child(2){
    border: 2px dashed green;
@@ -82,4 +93,30 @@ border: yellowgreen;
     height: 100%;
     width: 50%;
     background: gray;
+}
+@media(max-width:768px){    
+    main{
+        flex-direction: column;
+    }
+    nav{
+        border:5px dashed pink;       
+        position: relative;
+    }
+    nav ul{
+        border:5px dashed green;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 8rem;
+        transition: .5s;
+    }
+
+    #toggler:checked ~ ul{
+        border: 2px dashed red;
+        top: 100%;
+    }
+
+     body> header label{
+     display:flex
+    }
 }
