@@ -86,7 +86,7 @@ max-width: 1920px;
 
 }
 main article{
-    padding: 0 2rem;
+    padding: 0 5rem;
     border:5px dashed yellow;
     display:flex;
     flex-direction: column;
@@ -147,6 +147,7 @@ main section{
       
 
 main {
+    padding:0;
     flex-direction: column;
 }
 
