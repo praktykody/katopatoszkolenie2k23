@@ -107,8 +107,4 @@ main section{
 	flex:2;
 }
 
-body{
-	border:10px dashed red;
-	min-height:100vh;
-}
 
