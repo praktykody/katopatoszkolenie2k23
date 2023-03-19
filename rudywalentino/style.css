@@ -103,13 +103,14 @@ border: yellowgreen;
         position: relative;
     }
     body>header ul{
-        
+        background: #eee;
         flex-direction: column;
         position: absolute;
         right: 0;
-        top: 8rem;
+        top: -20rem;
         transition: .5s;
         padding: 1rem 1rem 1rem 1rem;
+        
     }
         body> header ul li a,
         body> header ul li{
