@@ -89,10 +89,10 @@ main article table td:nth-child(2){
    width: 100%
 }
 .zipParent{
-border: 2px solid pink;
+
 height: 1rem;
 position: relative;
-border: yellowgreen;
+
 }
 .zipChild{
   
@@ -130,7 +130,7 @@ border: yellowgreen;
      display:flex;
     }
     .burger{
-        border:2px dashed red;
+        
         width: 2rem;
         height: 2rem;
         margin-right: .5rem;
