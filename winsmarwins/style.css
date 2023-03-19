@@ -27,10 +27,17 @@ h2{
     margin: 0;
 }
 body > header{
-    width: 100%;
+    align-items: center;
+    background: #fff;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    position: sticky;
+    text-decoration: none;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    
+    
 } 
 body > header #toggler,
 body > header label {
@@ -200,6 +207,7 @@ main article table td:nth-child(2){
     #toggler:checked ~ .burger div:nth-child(3){
         transform: rotate(-45deg);
         top: 40%;
+    }
 
 
 }
