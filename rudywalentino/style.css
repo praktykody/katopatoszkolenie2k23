@@ -99,8 +99,7 @@ border: yellowgreen;
         flex-direction: column;
     }
     nav{
-        border:5px dashed pink;
-        flex-direction: column;
+        border:5px dashed pink;       
         position: relative;
     }
     nav ul{
@@ -108,6 +107,13 @@ border: yellowgreen;
         flex-direction: column;
         position: absolute;
         right: 0;
+    }
 
+    #toggler:checked ~ nav ul{
+        top: 100%;
+    }
+
+     body> header label{
+     display: flex;
     }
 }
