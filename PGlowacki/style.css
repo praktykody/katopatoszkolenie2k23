@@ -48,19 +48,15 @@ body > header ul li {
     padding: .5rem;
     text-decoration: none;
     justify-content: flex-end;
-    font-size: .5rem;
 }
 body > header #toggler,
 body > header label{
     display: none;
 }
-    #toggler:checked ~ ul {
-        top: 100%;
-    }
+    
 
-body > header label{
-    display: flex;
-}
+
+
 table {
     background-color: aqua;
 }
@@ -121,11 +117,28 @@ main section header table tr:nth-child(1) .zipChild{
     nav{
         position: relative;
     }
-    nav ul{
+    body > header ul{
         flex-direction: column;
         position: absolute;
         right: 0;
         top: -25rem;
         transition: 1s;
+        background-color: lightgreen;
     }
+    }
+
+    body > header ul li a,
+    body > header ul li{
+        margin: 0;
+        margin-bottom: .25rem;
+        padding: 0;
+    }
+
+    #toggler:checked ~ ul {
+        top: 100%;
+    }
+    body > header label{
+        display: flex;
+    }
+    /*Wysunięcie tabelki i jej stworzenie */
 }
