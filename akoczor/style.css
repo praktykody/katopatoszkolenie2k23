@@ -35,6 +35,12 @@ body > header{
     top: 0
     
 }
+body > header #toggler,
+body > header #label{
+   display: none;
+}
+
+
 
 body > header ul{
     display: flex;
@@ -70,7 +76,7 @@ main article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 main article img{
@@ -84,7 +90,7 @@ main article img{
 main section{
 
     flex: 2;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 
@@ -115,8 +121,33 @@ width: 100%;
    
 }
 
+h2{
+    margin: 0;
+    padding: 1rem;
+}
 
+/* Style ładowane tylko na mobile */
+@media(max-width: 768px){
 
+  
+
+    main{
+        flex-direction: column;
+    }
+
+    nav{
+        position: relative;
+        
+       
+    }
+
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: gray;
+    }
+}
 
 
 

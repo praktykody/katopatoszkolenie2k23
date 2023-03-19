@@ -4,7 +4,7 @@
 }
 
 img{
-    max-width: 100%;
+    max-width: 100%;;
 }
 body{
     background-color: blanchedalmond;
@@ -29,6 +29,8 @@ h1{
 h2{
     padding: 12px;
     color: black;
+    margin: 0;
+    border: 5px dashed blue;
 }   
 body > header{
     display:flex;
@@ -48,6 +50,18 @@ body > header ul li {
     text-decoration: none;
     justify-content: flex-end;
 }
+body > header #toggler,
+body > header label{
+    display: none;
+}
+    #toggler:checked ~ ul {
+        top: 100%;
+        border: 5px dashed red;
+    }
+
+body > header label{
+    display: flex;
+}
 table {
     background-color: aqua;
 }
@@ -58,7 +72,7 @@ main {
 }
 main article{
     flex: 2;
-    padding: 0.2rem;
+    padding: 1rem 2rem
 }
 main section img {
     border: 10px dashed rgba(78, 48, 24, 0.923);
@@ -69,6 +83,8 @@ main section header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 2rem;
+
 }
 main section {
     flex: 1;
@@ -78,6 +94,8 @@ main section header table td:nth-child(2){
 }
 main section header table{
     width: 100%;
+
+
 }
 
 .zipParent{
@@ -95,4 +113,22 @@ main section header table{
 }
 main section header table tr:nth-child(1) .zipChild{
     width: 60%;
+}
+
+@media(max-width:768px){
+    main{
+        flex-direction: column;
+    } 
+    nav{
+        border: 4px dashed black;
+        position: relative;
+    }
+    nav ul{
+        border: 4px dashed black;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: -25rem;
+        transition: 1s;
+    }
 }
