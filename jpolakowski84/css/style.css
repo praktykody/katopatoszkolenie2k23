@@ -6,7 +6,7 @@ img{max-width: 100%;
 }
 
 body{
-
+/* jak chcesz zastosować obraz to najlepszym poleceniem będzie Background: cover */
     font-family: "oswald";
     background-color: rgba(112, 112, 112, 0.525);
     font-size: 1rem;
